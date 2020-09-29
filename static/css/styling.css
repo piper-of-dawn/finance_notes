@@ -163,7 +163,7 @@ ul {
   text-indent: inherit; }
 
 ol {
-  list-style: decimal; }
+  list-style: upper-roman; }
 
 b,
 strong {
@@ -755,7 +755,7 @@ body,
 input,
 select,
 textarea {
-  font-family: 'Crimson Text','San Francisco', helvetica, arial, sans-serif;
+  font-family: 'Vollkorn','San Francisco', helvetica, arial, sans-serif;
   font-size: 62.5%; }
 
 body,
@@ -858,6 +858,8 @@ h5 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 3.2rem; }
+
+
 
 h6 {
   font-size: 1.8rem;
@@ -3906,7 +3908,10 @@ Slides Index
     }
 
     .bg-sweetyellow{
-      background-color: #feffda;  
+      background-color: #feffda; 
+      border-left:8px solid #cbce80 ;
+
+
     }
 
     .dynwidth
@@ -3916,12 +3921,21 @@ Slides Index
 
     .pad
     {
-      padding-left: 2%;
-      padding-right: 2%;
+      padding: 2%;
+  
  
          }
 
     .bg-lightgrey
     {
       background-color: #f7f9fb;
+    }
+
+    overridewidth
+    {
+      width: 100%;
+    }
+
+    .givemarginx {
+      margin:6%;
     }
