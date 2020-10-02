@@ -16,7 +16,7 @@ MathJax.Hub.Config({
 extensions: ["tex2jax.js"],
 jax: ["input/TeX", "output/CommonHTML"],  
 "CommonHTML": {
-   scale: 130
+   scale: 100
 
 
 },
@@ -210,6 +210,26 @@ jax: ["input/TeX", "output/CommonHTML"],
 
         <p>
           With some  more algebraic manipulations, we have $$S_0 = {{K_0.p.(1-r)} \over {N (\delta - g)}}$$
+
+          <div class="derivation"> <h4>Derivation</h4>
+
+            <p> 
+              We have,
+              $$S_0 = \sum_{t=0}^{n-1} [{{K_0.p.(1-r). (1+g)^t} \over {N(1+ \delta)^{t+1}}}]+ {S_n \over (1 + \delta)^n}$$
+              We know, \(S_n = {S_0 \over (1+g)^n}\)
+              $$ \Rightarrow  S_0 = \sum_{t=0}^{n-1} [{{K_0.p.(1-r). (1+g)^t} \over {N(1+ \delta)^{t+1}}}]+ {S_0. ({{1+g} \over {1+\delta}})^n}$$
+              $$ \Rightarrow S_0 ({1 - ({{1+g} \over {1+\delta}})^n )} = {{K_0.p.(1-r)} \over {N(1+ \delta)}} \sum_{t=0}^{n-1} ({{1+g} \over {1+\delta}})^t $$
+              \(\sum_{t=0}^{n-1} ({{1+g} \over {1+\delta}})^t \) is the sum of a finite geometric series.
+              $$ \Rightarrow S_0 ({1 - ({{1+g} \over {1+\delta}})^n )} = {{K_0.p.(1-r)} \over {N(1+ \delta)}} [{{1 - ({{1+g} \over {1+\delta}})^n} \over {{1 - ({{1+g} \over {1+\delta}}})}}] $$
+              This finally give,
+              $$ S_0 = {K.p.(1-r) \over {n(\delta - g)}} $$
+
+
+
+            </p>
+
+
+          </div>
 
           Hence, share price is independent when the share is sold.
         </p>  

@@ -7,8 +7,9 @@
         {
             "type": "pwa-msedge",
             "request": "launch",
-            "name": "Open market efficiency.html",
-            "file": "c:\\Users\\Fuckir's Machine\\Documents\\GitHub\\finance_notes\\demos\\market efficiency.html"
+            "name": "company_finance.html",
+            "file": "c:\\Users\\Fuckir's Machine\\Documents\\GitHub\\finance_notes\\demos\\flow_of_funds.html"
         }
     ]
 }
+

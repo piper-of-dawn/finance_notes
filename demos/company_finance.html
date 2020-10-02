@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js">
+
+
+</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+extensions: ["tex2jax.js"],
+jax: ["input/TeX", "output/CommonHTML"],  
+"CommonHTML": {
+scale: 120
+
+
+},
+});
+</script>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+
+<title>CAPM</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type='text/css' media='all' href="../static/css/styling.css">
+
+
+
+
+<article>
+
+
+
+    <section>
+        <div class="wrap aligncenter">
+            <h1 class="text-landing">
+                <strong>Company Finance</strong>
+            </h1>
+            <p class="text-intro">Cost of Capital of Debt and Equity</p>
+        </div>
+    </section>
+
+
+    <section class="bg-white">
+        <div class="wrap longform justify">
+
+
+
+
+            <div class="bg-lightgrey pad givemarginx">
+                <h4 class="space">Definitions</h4>
+
+                    <oL>
+                        <li> <strong> Debt: \(D\)</strong></li>
+                        <li> <strong> Equity: \(M\)</strong></li>
+                        <li> <strong> Capital: \(K=D+M\)</strong></li>
+                        <li> <strong> Retention ratio: \(r\)</strong> - Proportion of retained earnings to profit.</li>
+                        <li> <strong> Gearing ratio: \(D \over K\)</strong> - Proportion of debt to total capital \(D+M\).</li>
+                    </oL>
+
+                  
+
+
+
+
+            </div>
+                    <!--- Subsection !-->
+                    <h3><strong>Cost of Debt</strong></h3>
+
+            <p>
+                Taxation plays an important role in ascertaining the true cost to the company. For example: Availability
+                of trade credit means more funds at disposal to the company, but those funds are also subject to
+                taxation since the payment could not be shown as an expense.</p>
+
+            Similarly interest payments are also shows as an expense so the taxes saved on interest payments are:
+            \(iD_f(1-t_c)\)
+            <li> \(t_c\) is the corporate tax rate.
+            <li>\(D_f\) is the size of the fixed interest debt.</li>
+            <li>\(i\) is the rate of interest.</li>
+            </p>
+
+
+
+
+    
+
+            <p>In case of the marketable debt such as debentures, the analysis is slightly more complicated:</p>
+
+            <p>
+                The price of the debenture \(B_0\) to the company, when the debenture is issue is given as:
+                $$ B_0 = \sum_{t=1}^{t=n}
+                {{b.B_N} \over (1+i)^t } + {{B_N} \over (1+i)^n} $$
+<ul>
+    <li>\(b\) is the nominal interest rate paid on the debenture.</li>
+    <li>\(B_N\) is the terminal value of the debenture.</li>
+    <li>\(n\) is the lifetime of debenture.</li>
+    <li> \({b.B_N} \over {1+i}^t\) represents the present value of the cost of issuing debenture. Company will pay \({b.B_N}\) every period. Note that, when the price \(B_0\) will equal the terminal value \(B_N\) when \(i=b\). </li>
+</ul>
+<div class="bg-sweetyellow pad givemarginx"><p>The terms \(B_0\) and \(b\) have important implication. They are directly related. When company becomes risky or likely to be bankrupt then company has to pay a higher nominal interest rate \(b\) to maintain the price of the debenture at its original level.
+    <p> Debenture finance is likely to be prevalent among large companies because their diversification is high. Hence a reduced threat of bankruptcy for large firms, makes debenture finance cheaper for them.</p>
+     </p></div>
+</p>
+
+
+
+
+
+<!--- Subsection !-->
+<h3><strong>Cost of Equity Capital</strong></h3>
+
+<p>The risks associated with dividend depend upon the following three factors:
+
+     <h4 class="space">1. Gearing:</h4>
+     <p>
+        Suppose the profits of the company rises by \(\Pi_1\) to \(\Pi_2\). The change in the dividend, ignoring taxes would be given by:
+        $$ {(\Pi_2 - iD)(1-r) - (\Pi_1 - iD)(1-r)} \over (\Pi_1 - iD)(1-r)$$
+        We know, \(\Pi = p.K\). So we can re-write as:
+        $$ {p_2.K - p_1.K} \over {p_1.K - i.D}$$
+        Dividing both numerator and denominator  by \(K\), we get:
+        $$ {p_2 - p_1} \over {p_1 - i(D/K)}$$
+    
+        Clearly, the increase in dividends in greater than increase in profits and it is related inversely with gearing i.e D/K.
+        </p>
+        <p>We had derived in growth of firms section that the present value of all the shares or valuation of the company equals  \(S_0 = {K.p.(1-r) \over {N(\delta - g)}}\). 
+            </p>
+            <p>We know, \(K.p = \Pi - i.D\)</p>
+            <p>Hence, \(S_0 = {(\Pi - i.D)(1-r) \over {n(\delta - g)}}\). We can use this expression to solve for \(\delta\) which is the shareholder's discount rate. </p>
+            <p>\(\delta = {{{(\Pi - i.D)(1-r)} \over N.S_0} + g}\)</p>
+            <p>\(N.S_0 = M\) which is the value of all the shares and \((\Pi - i.D)(1-r)\) is the dividend \(D\).</p>
+            <p>Hence, \(\delta = {{d \over M} + g}\). \(d \over M\) represents the dividend yield. </p>
+
+            <div class="bg-sweetyellow pad givemarginx">
+                <p>
+                    Hence the the shares will be bought and sold till the dividend yield plus the growth rate equals the shareholder's discount rate.<br> Hence \({{d \over M} + g}\) represents the cost of the equity capital.
+                </p>
+
+            </div>
+
+            <p>\(y_e =  {\Pi - id} \over M\) is widely considered as the estimation of the cost of capital of the company. See the derivations on Page 382 and 382 of Morris & Hay to understand this. This doesn't seem important.</p>
+
+            
+            
+            
+            
+
+
+            <h3><strong>Effect on Gearing on Weighted Average Cost of Capital</strong></h3>
+            <p>What differentiates equity and debt is the uncertainty associated with return on equity. Let \(w\) denote the weighted cost of the capital and other notations remain as usual.</p>
+
+            <p>$$ w = i.{D \over {D+M}} + y{M \over {D+M}} $$</p>
+
+            <h4>Traditional View</h4>
+            <p>When  \(y > i\), this means that investors require a higher return from risky equity than riskless debt. We have already derived that higher gearing increases the variability of dividends and hence increases the risk of default.      This gives the traditional view that, after a point increasing gearing increases both \(i\) and \(y\), in response to increased risk. 
+                </p>
+            <img src="..\assets\gearing.svg">
+            <p>The optimal gearing is shown by the point \((D/M)^*\)</p>
+
+            <h4>Modigliani Miller Approach</h4>
+            <p>Modigliani-Miller argue that the line ww is horizontal because capital markets are perfect. Hence gearing does not have any effect on the cost of the capital.</p>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+</article>
+</body>
+
+
+</html>

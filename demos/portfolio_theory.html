@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js">
+
+
+</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+extensions: ["tex2jax.js"],
+jax: ["input/TeX", "output/CommonHTML"],  
+"CommonHTML": {
+scale: 130
+
+
+},
+});
+</script>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+
+<title>Market Efficiency</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" type='text/css' media='all' href="../static/css/styling.css">
+
+
+
+
+<article>
+
+
+
+  <section>
+    <div class="wrap aligncenter">
+      <h1 class="text-landing">
+        <strong>Capital Asset Pricing Model</strong>
+      </h1>
+      <p class="text-intro"></p>
+    </div>
+  </section>
+
+
+  <section class="bg-white">
+    <div class="wrap longform justify">
+
+      <div class="bg-lightgrey pad givemarginx">
+        <h4>Some Definitions</h4>
+        <ul>
+          <p>
+            <li>
+              <strong>Portfolio: </strong>
+              Set of individual assets with their individual risks and return. We will assume that assets follow a
+              normal distribution individually, so that we can boil down the analysis to the parameters that is mean and
+              the variance.
+            </li>
+            <li>
+          </p>
+          <p>
+            <strong>Return at time \(t\), \(R_t\): </strong>
+            It is given as \(R_t = {(P_t - P_{t-1}) + D_t} \over {P_{t-1}}\).
+          <ul>
+            <li>\(P_t\) denotes the price of the asset at time \(t\).</li>
+            <li>\(D_t\) denotes the dividend paid at the time \(t\)</li>
+          </ul>
+          </li>
+          </p>
+          <li>
+            <strong>Return at time \(t\), \(R_t\): </strong>
+            It is given as \(R_i = {P_{ij} \over R_{ij}}\).
+          <li>\(P_ij\) denotes the price of the asset \(t\) of the \(j_{th}\) portfolio.</li>
+          <li>\(D_t\) denotes the dividend paid at the time \(t\)</li>
+          </li>
+          <p>
+            <li>
+              <strong>Variance of the asset \(i\) in portfolio \(j\): </strong>
+              It is given as \(\sigma^2_{ij} = (\sum P_{ij} (R_{ij} - R_i)^2\).
+
+            </li>
+          </p>
+        </ul>
+      </div>
+
+
+      <h3><strong>Analysis</strong></h3>
+      <p>
+        \(R_{p} = X_A\mu_A + X_B\mu_B\) and \(X_A + X_B = 1\).
+      </p>
+      <p>\(\sigma_p^2 = [X_A^2\sigma_A^2 + X_B^2\sigma_B^2 + 2X_A(1-X_A)\rho_{AB}\sigma_A\sigma_B\). Here \(\rho_{AB}\)
+        represents the correlation in returns in assets A and B.</p>
+      <p>If \(\rho_{AB} = 1\) then we have \(R_p = a + \sigma_p.b\) i.e. we have a linear relationship between the risk
+        and the return. </p>
+
+      <div class="derivation">
+        <h4><strong>Derivation: </strong>When \(\rho_{AB}=1\)</h4>
+        <p>
+
+          \(\sigma_P^2 = \sigma_A^2 {X_A}^2 + \sigma_B^2 {X_B}^2 + 2 \rho_{AB}. \sigma_A. \sigma_B. X_A. X_B\)
+        <p>
+          Substituting \(\rho_{AB} = 1\)we get,
+        <p>
+          \(\sigma_P = \sigma_A {X_A} + \sigma_B {X_B}\)
+        <p>
+          Since we only have two assets in the portfolio hence, \(X_A + X_B = 1\)
+        <p>
+          \(\Rightarrow \sigma_P = \sigma_A {X_A} + \sigma_B (1 - X_A)\)
+        <p>
+          Solving for \(X_A = {{\sigma_P - \sigma_B} \over {\sigma_A - \sigma_B}} \)
+        <p>
+          Hence the risk of the portfolio is a linear combination of the risk of the assets.
+        <p>
+          We can further write the return on the portfolio as: \(R_P = R_A.X_A + R_B.X_B \Rightarrow R_P = R_A.X_A +
+          R_B.(1-X_A)\)
+        <P>
+          Substituting the value of \(X_A\), this gives \( R_P = R_A.{{\sigma_P - \sigma_B} \over {\sigma_A - \sigma_B}}
+          + R_B.(1-{{\sigma_P - \sigma_B} \over {\sigma_A - \sigma_B}}) \)
+        <p>
+          Rearranging terms gives a linear relationship.
+
+
+
+
+
+      </div>
+
+      <div class="bg-sweetyellow pad givemarginx">diagram</div>
+
+      <p>What if \(\rho = -1\) then we have \(R_p = a + \sigma_p.b\) i.e. we have a linear relationship between the risk
+        and the return. </p>
+
+
+
+
+
+      <!--- Subsection !--->
+      <h3><strong>Capital Market Line</strong></h3>
+      <h4 class ="text-intro">Solution to the portfolio problem</h4>
+      <p>Consider a situation where investors can borrow or lend unlimited amount of money at a risk-free rate.</p>
+      <p>Let us consider a portfolio of riskless and risky asset.</p>
+      <p>The expected returns for such an portfolio would be given by: \(R_p = X R_a + (1-X)R_f\).<br>
+        Here \(R_f\) denotes the expected return on the risk free asset and \(X\) denotes the proportion invested in the
+        risky asset..
+      </p>
+      <p>Note that the risk-free asset has a zero variance. Hence the variance of the portfolio is given by:
+        \(\sigma_p^2 = \sigma_a^2 X^2\) <br>
+        \(\Rightarrow X = {\sigma_p \over \sigma_a} \)
+      </p>
+      The implication of {\sigma_p \over \sigma_a} is that the ratio of risks of the portfolio is the proportion of
+      money invested in risky asset.
+      <p>
+        When we substitute, \(X ={\sigma_p \over \sigma_a}\) in the expected returns to the portfolio equation \(R_p = X
+        R_a + (1-X)R_f\), we get: <br>
+        $$\(R_p = {\sigma_p \over \sigma_a} (R_a - R_f) + R_f\) $$
+        <br>
+        Now on the risk-return plane this is the equation of the straight line with the intercept at \(R_f\) and slope
+        \({(R_a - R_f) \over \sigma_p }\)
+      </p>
+      \\\Insert Diagram
+      <p>
+        This straight line gives the efficient frontier. It shows all possible combinations of riskless and risk-free
+        asset.
+      </p>
+      <p>
+        When we super-impose the risk preferences of the investor shown by the indifference curve we get the the
+        solution to the portfolio problem represented by the point B.
+      </p>
+
+      <div class="bg-lightgrey pad givemarginx">
+
+        This theorem has a special name, it is called <strong>Tobin Separation Theorem</strong>
+
+      </div>
+
+      <p>Let us assume homogenous investors.</p>
+
+      
+      
+      
+      
+      <!--- Subsection !-->
+      <h3><strong>Everyone is better off in a world with capital markets.</strong></h3>
+      <p>
+        Suppose, R_f didn't exist, 
+      </p>
+
+      <p>The trade-off of risk and return is similar for every investor.</p>
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+</article>
+</body>
+
+
+</html>
+
+
+

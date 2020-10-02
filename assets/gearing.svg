@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="960px" height="560px" viewBox="0 0 960 560" enable-background="new 0 0 960 560" xml:space="preserve">
+<g>
+	<line fill="#FFFFFF" x1="127" y1="17" x2="127" y2="514"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="127.5" y1="23" x2="127.5" y2="514"/>
+		<g>
+			<path d="M127.082,17.003c-1.054,2.84-2.852,6.363-4.756,8.547l4.756-1.72l4.755,1.72
+				C129.933,23.366,128.135,19.843,127.082,17.003z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<line fill="#FFFFFF" x1="126" y1="515" x2="666" y2="515"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="126" y1="514.5" x2="660" y2="514.5"/>
+		<g>
+			<path d="M666.128,514.646c-2.84,1.054-6.363,2.852-8.548,4.756l1.721-4.756l-1.721-4.755
+				C659.765,511.795,663.288,513.593,666.128,514.646z"/>
+		</g>
+	</g>
+</g>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M127.082,426.222
+	c0,0,536.783,35.452,635.264-128.946"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M127.082,269.071c0,0,485.445,90.101,574.498-84.861
+	"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M127.082,269.071
+	c0,0,287.439,277.925,620.598,23.194"/>
+<text transform="matrix(1 0 0 1 708.9141 180.0205)" font-family="'Georgia'" font-size="19.1095">y</text>
+<text transform="matrix(1 0 0 1 749.8154 279.7578)" font-family="'Georgia'" font-size="19.1095">w</text>
+<text transform="matrix(1 0 0 1 765.9502 329.7939)" font-family="'Georgia'" font-size="19.1095">i</text>
+<text transform="matrix(1 0 0 1 623.4668 545.8652)" font-family="'Georgia'" font-size="19.1095">D/M</text>
+<text transform="matrix(1 0 0 1 123.2676 535.1777)" font-family="'Georgia'" font-size="19.1095">0</text>
+<text transform="matrix(1 0 0 1 105.374 260.6904)"><tspan x="0" y="0" font-family="'Georgia'" font-size="19.1095">y</tspan><tspan x="0" y="22.932" font-family="'Georgia'" font-size="19.1095">w</tspan></text>
+<text transform="matrix(1 0 0 1 109.6904 429.5332)" font-family="'Georgia'" font-size="19.1095">i</text>
+<g>
+	<line x1="415" y1="398" x2="415" y2="515"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="414.5" y1="398" x2="414.5" y2="400"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="5,5" x1="414.5" y1="405" x2="414.5" y2="510"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="414.5" y1="513" x2="414.5" y2="515"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 384.8496 539.4541)" font-family="'Georgia'" font-size="19.1095">(D/M)*</text>
+</svg>
