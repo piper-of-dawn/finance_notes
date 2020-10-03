@@ -4,11 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+   
         {
             "type": "pwa-msedge",
             "request": "launch",
             "name": "company_finance.html",
-            "file": "c:\\Users\\Fuckir's Machine\\Documents\\GitHub\\finance_notes\\demos\\flow_of_funds.html"
+            "file": "c:\\Users\\Fuckir's Machine\\Documents\\GitHub\\finance_notes\\demos\\market efficiency.html"
         }
     ]
 }

@@ -12,7 +12,12 @@ MathJax.Hub.Config({
 extensions: ["tex2jax.js"],
 jax: ["input/TeX", "output/CommonHTML"],  
 "CommonHTML": {
-scale: 130
+scale: 120,
+linebreaks: {
+  automatic: true
+}
+
+
 
 
 },
@@ -46,7 +51,7 @@ scale: 130
   <section>
     <div class="wrap aligncenter">
       <h1 class="text-landing">
-        <strong>Single Index Model</strong>
+        <strong>Single Index Model and Capital Asset Pricing Model</strong>
       </h1>
       <p class="text-intro"></p>
     </div>
@@ -77,14 +82,116 @@ scale: 130
         \(\sigma_{ei} \) denote the standard deviation of \(i_{th}\) security.
 
     </ul>
+
+        <div class="bg-sweetyellow pad givemarginx"><h4>Interpretation of \(\beta\)</h4>
+     <p>\(\beta\) represents the sensitivity of the returns to a stock to market movements. If \(\beta\) is greater than 1 then stock is more sensitive to the market and if the \(\beta\) is less than 1, the stock is less sensitive to the market.
+      <h6>Why 1?</h6>   
+      Regress the portfolio to itself and you will get \(\beta\) = 1
+    </p>
+        
+        </div>
       
+   
+   <p>
     Let us break \(a_i\) into the intercept \(\alpha_i\) and the random component \(e_i\). \(a_i = \alpha_i + e_i\).
     Now the return on a stock can be written as:
       $$ R_i = \alpha_i + \beta_i.R_m + e_i$$
+      <h5>Expected Return of an individual security</h5>      
+      $$ E(R_i) = E(\alpha_i) + E(\beta_i.R_m) + E(e_i) $$
+      <h5>Risk of an individual security</h5>  
+      $$ Var(R_i) = Var(\alpha_i) + Var(\beta_i.R_m) + Var(e_i) $$
+      $$ \Rightarrow \sigma_i^2 = \beta_i^2 \sigma_m^2 + \sigma_ei^2 $$
 
 
      </p> 
    </div>
+
+
+   
+   
+   
+   
+   <!--- Subsection !-->
+   <h3><strong>Risk of the Portfolio</strong></h3>
+    <p>Define \(\beta_p\) as the weighted average of \(\beta_i\)s, i.e. \(\beta_p = \sum beta_i X_i \). </p>
+    <p>Define \(\alpha_p\) as the weighted average of \(\alpha_i\)s, i.e. \(\alpha_p = \sum alpha_i X_i \). </p>
+    <p>$$ R_p^* = \alpha_p + \beta_p.R_m^* $$</p>
+
+
+
+
+
+
+
+
+
+<!--- Subsection !-->
+    <h3><strong>Diversification</strong></h3>
+      <p>
+        Risk of the portfolio \(\sigma_p\)^2 is:
+        $$ \sigma_p^2 = \beta_p^2 \sigma_m^2 + \sum_{i}^{N} X_i^2 \sigma_{ei}^2 $$
+        Let \(X_i\) be \(1 \over N\), means we allocate equal amount of money to each portfolio.
+        $$\Rightarrow \sigma_p^2 = \beta_p^2 \sigma_m^2 + {1 \over N} \sum_{i}^{N} {1 \over N}  \sigma_{ei}^2 $$
+        Now as \(N \to \infty\) \(\Rightarrow\) \(sigma_{ei}^2 \to 0\). 
+
+        <div class="bg-sweetyellow pad givemarginx">
+          <p>
+            The implication being as the size of portfolio increases the average residual risk decreases. This is known as diversification. The risk that cannot be diversified is the first term: \(\beta_p^2 \sigma_m^2\). </p>
+        </div>
+
+        Hence, \(\sigma_p = \sum beta_i X_i \sigma_m\). Note that  \(\sigma_m \) denotes the standard deviation of \(R_m\), and hence is a given parameter regardless of the security we examine.
+
+        <div class="bg-lightgrey pad givemarginx"></div>
+        <p> Therefore, \(\sigma_ei\) is known as diversifiable risk and \(\sigma_m\) is known as non-diversifiable risk.
+      </p>
+
+
+
+
+
+
+
+
+
+      <!--- Subsection !-->
+      <h3><strong>Price of Risk</strong></h3>
+      <p>We have seen that the capital market line is given by \(R_p = {{(R_a - R_f)} \ over \sigma_a}. \sigma_p + R_f \).
+      </p>
+      <div class="bg-sweetyellow pad givemarginx"><p> Risk free rate \(R_f\) is the price of time.</p> </div>
+      <p>Note that here \({R_a - R_f) \over  \sigma_a}\) represents the price of risk.The interpretation is that it represents the marginal returns that portfolio will pay when risk is increased.</p>
+      <p>If we are anywhere on the capital market line we are combining the risk-free asset and the portfolio in a particular combination.</p>
+      <div class="bg-lightgrey pad givemarginx">
+      <li>
+      <h5><strong>Systematic Risk: </strong></h5>
+      <p>enter definition</p>
+      </li>
+      <li>
+        <h5><strong>Non-Systematic Risk: </strong></h5>
+        <p>enter definition</p>
+        </li>
+        </div>
+
+        <p>Any portfolio above the capital market line will either have a higher return at a same/lower risk. Hence investors will short the portfolio lying on CML for that portfolio.</p>
+
+        <p>Thus arbitrage will ensure that all the investments and the portfolios lie on CML.</p>
+
+       <p>We know,
+        $$ R_f = a $$
+        $$ R_a = R_f + b $$
+        $$ \Rightarrow R_i = R_f + \beta_i (R_a - R_f)$$
+
+
+       </p> 
+       <p></p>
+
+
+
+
+
+
+
+
+
 
 
     </div>

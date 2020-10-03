@@ -12,7 +12,7 @@ MathJax.Hub.Config({
 extensions: ["tex2jax.js"],
 jax: ["input/TeX", "output/CommonHTML"],  
 "CommonHTML": {
-scale: 130
+scale: 110
 
 
 },
@@ -149,25 +149,25 @@ scale: 130
       <h4 class ="text-intro">Solution to the portfolio problem</h4>
       <p>Consider a situation where investors can borrow or lend unlimited amount of money at a risk-free rate.</p>
       <p>Let us consider a portfolio of riskless and risky asset.</p>
-      <p>The expected returns for such an portfolio would be given by: \(R_p = X R_a + (1-X)R_f\).<br>
+      <p>The expected returns for such an portfolio would be given by: $$R_p = X R_a + (1-X)R_f$$.<br>
         Here \(R_f\) denotes the expected return on the risk free asset and \(X\) denotes the proportion invested in the
         risky asset..
       </p>
       <p>Note that the risk-free asset has a zero variance. Hence the variance of the portfolio is given by:
-        \(\sigma_p^2 = \sigma_a^2 X^2\) <br>
-        \(\Rightarrow X = {\sigma_p \over \sigma_a} \)
+        $$\sigma_p^2 = \sigma_a^2 X^2$$ 
+        $$\Rightarrow X = {\sigma_p \over \sigma_a} $$
       </p>
-      The implication of {\sigma_p \over \sigma_a} is that the ratio of risks of the portfolio is the proportion of
+      The implication of \({\sigma_p \over \sigma_a}\) is that the ratio of risks of the portfolio is the proportion of
       money invested in risky asset.
       <p>
         When we substitute, \(X ={\sigma_p \over \sigma_a}\) in the expected returns to the portfolio equation \(R_p = X
-        R_a + (1-X)R_f\), we get: <br>
-        $$\(R_p = {\sigma_p \over \sigma_a} (R_a - R_f) + R_f\) $$
-        <br>
+        R_a + (1-X)R_f\), we get: 
+        $$R_p = {\sigma_p \over \sigma_a} (R_a - R_f) + R_f$$
+        
         Now on the risk-return plane this is the equation of the straight line with the intercept at \(R_f\) and slope
         \({(R_a - R_f) \over \sigma_p }\)
       </p>
-      \\\Insert Diagram
+      <img src="..\assets\cml.svg">
       <p>
         This straight line gives the efficient frontier. It shows all possible combinations of riskless and risk-free
         asset.

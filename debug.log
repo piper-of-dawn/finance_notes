@@ -308,3 +308,5 @@
 [0927/193806.981:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0927/193806.981:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0927/193806.981:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[1002/221042.251:ERROR:settings.cc(325)] Settings version is not 1
+[1002/221130.049:ERROR:file_io.cc(90)] ReadExactly: expected 152, observed 40
