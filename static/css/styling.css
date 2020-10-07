@@ -1,11 +1,16 @@
 
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&display=swap');
 /*
 =========================================
 0. CSS Reset & Normalize
 =========================================
 */
+
+html
+{
+  scroll-behavior: smooth;
+}
 html,
 body,
 div,
@@ -755,7 +760,7 @@ body,
 input,
 select,
 textarea {
-  font-family: 'Vollkorn','San Francisco', helvetica, arial, sans-serif;
+  font-family: 'Cambria','San Francisco', helvetica, arial, sans-serif;
   font-size: 62.5%; }
 
 body,
@@ -3962,4 +3967,17 @@ Slides Index
       margin-bottom: 2.2rem;
     }
 
-   
+    h1, h2, h3, h4, h5, h6
+    {
+      font-family: 'Kreon';
+    }
+
+
+.colors
+{
+  color: #fff7f7;
+  color: #08ffc8;
+  color: #dadada;
+  color: #204969;
+  color: #204969
+}
