@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+
+<head>
+    <script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/CommonHTML"], "CommonHTML": { scale: 115 }, });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/styling.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="..\static\js\jquery.js"></script>
+    <script language="JavaScript" type="text/javascript" src="..\static\js\scroll.js"></script>
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/print.css">
+
+
+
+
+
+</head>
+
+
+<button type="button" onclick="printJS('pdf')">
+    Print PDF
+ </button>
+
+
+<title>Auto-regressive Processes</title>
+
+
+
+
+
+
+<article>
+    <section>
+        <div class="wrap aligncenter">
+            <h3 data-aos="zoom-in-up" data-aos-duration="2000" class="text-landing">
+                <strong> Stochastic Processes </strong>
+            </h3>
+            <p class="text-intro">
+                Autoregressive, Random Walk and Moving Average Processes</p>
+        </div>
+    </section>
+
+
+    <section class="bg-white">
+        <div class="wrap longform justify">
+
+
+
+
+
+
+            <hr>
+            <!--- Subsection !-->
+            <h4 class="givebackground">What are stochastic processes?</h4>
+            <p>
+                We simply define stochastic process a statistical phenomenon that evolves over time according to some probability laws. A particular sample of such a process is called a realization or a sample. So, if we have observed a sample of size T of some random
+                variable \(z_t\), then we have \({z_1, \ldots, z_T }\). This is supposed to be one possible realisation of the underlying stochastic process that has generated the data. That is, even if we have, $$ \left\{z_{t}\right\}_{t=-\infty}^{\infty}=\left\{\ldots,
+                z_{-1}, z_{0}, z_{1}, z_{2}, \ldots, z_{T}, z_{T+1}, z_{T+2}, \ldots\right\} $$
+
+            </p>
+
+            <!--- Subsection !-->
+            <h4 data-aos="fade-up" data-aos-duration="2000" data-aos-duration="2000" class="givebackground">Stationarity</h4>
+            <p data-aos="fade-up" data-aos-duration="2000">Intuitively, stationarity implies, the properties of one section of the data are much like those of any other section. Broadly speaking a time series is said to be stationary if there is no systematic change in mean (no trend), if there is
+                no systematic change in variance and if strictly periodic variations have been removed.
+                <mark>The process is weakly stationary if the mean function as we look up and down the stochastic process and look at the average going on of each point, the mean function is constant.  </mark> </p>
+
+
+            <div data-aos="zoom-in-up" data-aos-duration="2000" class="bg-lightgrey pad givemarginx">
+                <h5 class="aligncenter"><strong>Formal Definition</strong></h5>
+                <p>
+                    Hence when \(k=1\),the first two moments that is the mean and the variance are independent of \(t\). $$ \mu(t) = \mu $$ $$ \sigma^2(t) = \sigma^2 $$
+                </p>
+
+                <p>
+                    A time series is said to be strictly stationary if the joint distribution of \(X(t_1), . . . , X(t_k)\) is the same as the joint distribution of \(X(t_1+\tau ), . . . , X(t_k+\tau)\) for all \(t_1, . . . , t_k, \tau\). In other words, shifting the time
+                    origin by an amount \(\tau\) has no effect on the joint distributions, which must therefore depend only on the intervals between \(t_1, t_2, . . . , t_k\). The above definition holds for any value of \(k\).
+
+
+                </p>
+                <p>This means that the autocorrelation for any particular lag is the same regardless of where we are in time.
+
+                </p>
+
+            </div>
+
+
+
+
+
+
+            <!--- Subsection !-->
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <h4 class="givebackground">Random walk processes</h4>
+                <p>Let Z represent a sequence of random variables in discrete-time. Z has a mean mu and variance Sigma squared. Z is nothing but the first difference of x. SO the sum of all Z is equal to Xt. $$X_t = \sum_{i=1}^t Z_i$$
+                </p>
+            </div>
+
+            <!--- Subsection !-->
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <h4 class="givebackground">Autocorrelation Function</h4>
+                <p>$$\frac{\text{Covariance}(x_t, x_{t-h})}{\text{Std.Dev.}(x_t)\text{Std.Dev.}(x_{t-h})} = \frac{\text{Covariance}(x_t, x_{t-h})}{\text{Variance}(x_t)}$$</p>
+
+                <p>$$ {1 \over T} {log{y_{i, t+T} \over y_{i,t}}} = \alpha - \beta \ log{(y_{it})} + \epsilon_{i,t}$$</p>
+                <p>$$ \sigma_t+T
+                    < \sigma_t $$</p>
+            </div>
+
+            <div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="2000">remark</div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+</article>
+
+<div class="scrollBar1"><span></span></div>
+<a href="javascript:window.print()">
+    <h1>Hello</h1>
+</a>
+
+<div class="scrollBar2"><span></span></div>
+
+
+<script>
+    AOS.init();
+</script>
+
+</html>

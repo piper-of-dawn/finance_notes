@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+
+<head>
+    <script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/CommonHTML"], displayAlign: "left", "CommonHTML": { scale: 115 }, });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/styling.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="..\static\js\jquery.js"></script>
+    <script language="JavaScript" type="text/javascript" src="..\static\js\scroll.js"></script>
+
+</head>
+
+
+<title>Insert Title</title>
+
+
+
+
+
+
+<article>
+    <section>
+        <div class="wrap aligncenter">
+            <h1 data-aos="zoom-in-up" data-aos-duration="2000" class="text-landing">
+                <strong>Heading</strong>
+            </h1>
+            <p class="text-intro"></p>
+        </div>
+    </section>
+
+
+    <section class="bg-white">
+        <div class="wrap longform justify">*
+
+
+            <!--- Subsection !-->
+            <h3 data-aos="fade-up" data-aos-duration="2000" data-aos-duration="2000" class="givebackground">
+                <strong>Subhead</strong></h3>
+
+            <p>Conditional Least Squares</p>
+            $$ X_t = \alpha_1 X_{t-1} + \alpha_2 X_t-2 +... \\[10pt] \epsilon_t = X_t - \alpha_1 X_{t-1} - \alpha_2 X_t-2 +... \\[10pt] \sum_{t=p+1}^T = \sum ( X_t - \alpha_1 X_{t-1} - \alpha_2 X_t-2 +...)^2 \\[10pt] SS = f(\alpha_1, \alpha_2, \alpha_3....) $$
+
+            <p>\(X_1\) has to be treated as given because it is a evolving time series.</p>
+
+
+            Minimise over \(\alpha_1, \alpha_2, \alpha_3.... \alpha_p\) \epsilon_t = X_t - b_{t-1} \epsilon_{t-1} Hence, \epsilon_2 = X_2 - b_{1} \epsilon_{1} \epsilon_3 = X_3 - b_{2} \epsilon_{2} ans so on on... In MA(q) process, first \(q\) \(\epsilon\)s are to
+            be set to 0.
+
+            <h4><strong>How to minimise?</strong></h4>
+            <ul>
+                <li>Grid Search</li>
+                <li>General Method</li>
+            </ul>
+            <h5><strong>Grid Search</strong></h5>
+            <p>Suppose \(\epsilon\) is only the function of \(f(a_1)\)</p>
+
+            <h5><strong>General Method</strong></h5>
+            <p>Let $$ \theta_0 \Rightarrow Initial value of parameters \\[10pt]X_t = \alpha_1 X_{t-1} + \alpha_2 X_t-2 +... \\ \Rightarrow \epsilon_t \\(\theta^0) denotes the starting errors. \\ \epsilon_t (\theta_0) denotes the true errors. \\ \epsilon_t
+                (\theta_0) = \epsilon_t (\theta^0) + {\partial \epsilon_t} \over {\partial \theta} (\theta_0 - \theta^0) \\{\partial \epsilon_t} \over {\partial \theta} is the matrix $$
+
+            </p>
+
+        </div>
+    </section>
+</article>
+<script>
+    AOS.init();
+</script>
+</body>
+
+</html>
