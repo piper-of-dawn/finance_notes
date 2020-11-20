@@ -9,135 +9,238 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type='text/css' media='all' href="../static/css/styling.css">
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/paper.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="..\static\js\jquery.js"></script>
     <script language="JavaScript" type="text/javascript" src="..\static\js\scroll.js"></script>
-    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../static/css/print.css">
-
-
 
 
 
 </head>
 
 
-<button type="button" onclick="printJS('pdf')">
-    Print PDF
- </button>
-
-
-<title>Auto-regressive Processes</title>
 
 
 
 
+<title>Time-Series Introduction</title>
+
+<body>
 
 
-<article>
-    <section>
-        <div class="wrap aligncenter">
-            <h3 data-aos="zoom-in-up" data-aos-duration="2000" class="text-landing">
-                <strong> Stochastic Processes </strong>
-            </h3>
-            <p class="text-intro">
-                Autoregressive, Random Walk and Moving Average Processes</p>
-        </div>
-    </section>
 
 
-    <section class="bg-white">
-        <div class="wrap longform justify">
+    <article>
+        <section>
+            <div class="wrap aligncenter">
+
+
+                <div class="context"> Stochastic Processes</div>
+
+
+                <p class="text-intro">
+                    Autoregressive, Random Walk and Moving Average Processes</p>
+            </div>
+        </section>
 
 
 
 
 
-
-            <hr>
-            <!--- Subsection !-->
-            <h4 class="givebackground">What are stochastic processes?</h4>
-            <p>
-                We simply define stochastic process a statistical phenomenon that evolves over time according to some probability laws. A particular sample of such a process is called a realization or a sample. So, if we have observed a sample of size T of some random
-                variable \(z_t\), then we have \({z_1, \ldots, z_T }\). This is supposed to be one possible realisation of the underlying stochastic process that has generated the data. That is, even if we have, $$ \left\{z_{t}\right\}_{t=-\infty}^{\infty}=\left\{\ldots,
-                z_{-1}, z_{0}, z_{1}, z_{2}, \ldots, z_{T}, z_{T+1}, z_{T+2}, \ldots\right\} $$
-
-            </p>
-
-            <!--- Subsection !-->
-            <h4 data-aos="fade-up" data-aos-duration="2000" data-aos-duration="2000" class="givebackground">Stationarity</h4>
-            <p data-aos="fade-up" data-aos-duration="2000">Intuitively, stationarity implies, the properties of one section of the data are much like those of any other section. Broadly speaking a time series is said to be stationary if there is no systematic change in mean (no trend), if there is
-                no systematic change in variance and if strictly periodic variations have been removed.
-                <mark>The process is weakly stationary if the mean function as we look up and down the stochastic process and look at the average going on of each point, the mean function is constant.  </mark> </p>
+        <section class="bg-white">
 
 
-            <div data-aos="zoom-in-up" data-aos-duration="2000" class="bg-lightgrey pad givemarginx">
-                <h5 class="aligncenter"><strong>Formal Definition</strong></h5>
+            <div class="toc" data-aos="zoom-in-up" data-aos-duration="1000">
+                <ul>
+
+                    <li><a href="#What are stochastic processes?">What are stochastic processes?</a></li>
+
+                    <li><a href="#Stationarity">Stationarity</a>
+                        <ul>
+
+                            <li><a href="#Strict Stationarity">Strict Stationarity</a></li>
+                            <li><a href="#Weak Stationarity">Weak Stationarity</a></li>
+                            <li><a href="#Co-variance Stationarity">Co-variance Stationarity</a></li>
+                            <li><a href="#Second Order Stationarity">#Second Order Stationarity</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#Random walk processes">Random walk processes</a></li>
+                    <li><a href="#Autocorrelation Function">Autocorrelation Function</a></li>
+                </ul>
+                <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#08ffc8" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+              </svg>
+            </div>
+
+            <div class="wrap longform justify">
+
+
+
+
+
+
+                <div id="What are stochastic processes?" data-aos="fade-up" data-aos-duration="2000">
+
+                    <!--- Subsection !-->
+                    <h4 class="givebackground">What are stochastic processes?</h4>
+                    <p>
+                        We simply define stochastic process a statistical phenomenon that evolves over time according to some probability laws. A particular sample of such a process is called a realization or a sample. So, if we have observed a sample of size T of some random
+                        variable \(z_t\), then we have \({z_1, \ldots, z_T }\). This is supposed to be one possible realisation of the underlying stochastic process that has generated the data. That is, even if we have, $$ \left\{z_{t}\right\}_{t=-\infty}^{\infty}=\left\{\ldots,
+                        z_{-1}, z_{0}, z_{1}, z_{2}, \ldots, z_{T}, z_{T+1}, z_{T+2}, \ldots\right\} $$
+
+                    </p>
+
+
+                </div>
+
+
+                <div id="Stationarity" data-aos="fade-up" data-aos-duration="2000">
+
+
+                    <!--- Subsection !-->
+                    <h4 class="givebackground">Stationarity</h4>
+                    <p>Intuitively, stationarity implies, the properties of one section of the data are much like those of any other section. Broadly speaking a time series is said to be stationary if there is no systematic change in mean (no trend), if
+                        there is no systematic change in variance and if strictly periodic variations have been removed.</p>
+
+
+
+
+
+
+
+
+                </div>
+
                 <p>
-                    Hence when \(k=1\),the first two moments that is the mean and the variance are independent of \(t\). $$ \mu(t) = \mu $$ $$ \sigma^2(t) = \sigma^2 $$
+                    We can categorize stationarity as follows:
+                    <ol>
+                        <li>Strict Stationarity</li>
+                        <li>Weak Stationarity</li>
+                        <li>Covariance Stationarity</li>
+                    </ol>
                 </p>
 
-                <p>
-                    A time series is said to be strictly stationary if the joint distribution of \(X(t_1), . . . , X(t_k)\) is the same as the joint distribution of \(X(t_1+\tau ), . . . , X(t_k+\tau)\) for all \(t_1, . . . , t_k, \tau\). In other words, shifting the time
-                    origin by an amount \(\tau\) has no effect on the joint distributions, which must therefore depend only on the intervals between \(t_1, t_2, . . . , t_k\). The above definition holds for any value of \(k\).
+                <div id="Strict Stationarity" data-aos="zoom-in-up" data-aos-duration="2000" class="bg-lightgrey pad givemarginx">
+                    <h5 class="aligncenter"><strong>Formal Definition: Strict Stationarity</strong></h5>
 
 
-                </p>
-                <p>This means that the autocorrelation for any particular lag is the same regardless of where we are in time.
-
-                </p>
-
-            </div>
+                    <p>
+                        A time series is said to be strictly stationary if the joint distribution of \(X(t_1), \ldots , X(t_k)\) is the same as the joint distribution of \(X(t_{1+\tau} ), \ldots , X(t_{k+\tau})\) for all \(t_1, \ldots , t_k.\) In other words, for a discrete
+                        process shifting the time origin by an amount \(\tau\) has no effect on the joint distributions, which must therefore depend only on the intervals between \(t_1, t_2, \ldots , t_k\). The above definition holds for any value of
+                        \(k\).
 
 
+                    </p>
+                    <p>This means that the autocorrelation for any particular lag is the same regardless of where we are in time.
+
+                    </p>
+
+                </div>
+
+
+                <div id="Weak Stationarity" data-aos="fade-up" data-aos-duration="2000">
+                    <!--- Subsection !-->
+                    <h4 class="sub">Weak Stationarity</h4>
+                    <p>
+                        We have seen that the strict stationarity implies that the probability distribution is same no matter wherever we are in the time. However, it is highly ambitious to claim that we know the probability distribution function. The concept of weak stationarity
+                        <mark>or the second order stationarity </mark> is derived from this. The process is weakly stationary if the mean function as we look up and down the stochastic process and look at the average going on of each point, the mean function
+                        is constant.</p>
+
+                </div>
+
+
+                <div id="Co-variance Stationarity" data-aos="fade-up" data-aos-duration="2000">
+
+
+                    <!--- Subsection !-->
+                    <h4 class="sub">Covariance Stationarity</h4>
+                    <p>
+                        $$ E\left(z_{t}-\mu\right)\left(z_{t+k}-\mu\right)=\left\{\begin{array}{ll} \sigma^{2} & \text { for } k=0 \\ 0 & \text { for } k \neq 0 \end{array}\right. $$ This process \(z_t\) is co-variance stationary.
+                    </p>
+                    <p>
+                        Hence when \(k=1\),the first two moments that is the mean and the variance are independent of \(t\). $$ \mu(t) = \mu $$ $$ \sigma^2(t) = \sigma^2 $$
+                    </p>
+
+                </div>
 
 
 
 
-            <!--- Subsection !-->
-            <div data-aos="fade-up" data-aos-duration="2000">
-                <h4 class="givebackground">Random walk processes</h4>
-                <p>Let Z represent a sequence of random variables in discrete-time. Z has a mean mu and variance Sigma squared. Z is nothing but the first difference of x. SO the sum of all Z is equal to Xt. $$X_t = \sum_{i=1}^t Z_i$$
-                </p>
-            </div>
 
-            <!--- Subsection !-->
-            <div data-aos="fade-up" data-aos-duration="2000">
-                <h4 class="givebackground">Autocorrelation Function</h4>
-                <p>$$\frac{\text{Covariance}(x_t, x_{t-h})}{\text{Std.Dev.}(x_t)\text{Std.Dev.}(x_{t-h})} = \frac{\text{Covariance}(x_t, x_{t-h})}{\text{Variance}(x_t)}$$</p>
 
-                <p>$$ {1 \over T} {log{y_{i, t+T} \over y_{i,t}}} = \alpha - \beta \ log{(y_{it})} + \epsilon_{i,t}$$</p>
-                <p>$$ \sigma_t+T
-                    < \sigma_t $$</p>
-            </div>
+                <div id="Second Order Stationarity" data-aos="fade-up" data-aos-duration="2000">
+                    <!--- Subsection !-->
+                    <h4 class="sub">Second Order Stationarity</h4>
 
-            <div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="2000">remark</div>
+                    <p>To understand the notion of second order stationarity, we must first understand the concept of strict stationarity.</p>
+
+                    <p>The probability distribution associated with \(t\) observations \(z_1, z_2, \ldots z_t\) made at any time points \(1, 2, \ldots , t\) is the same as that of the t observations \(z_{1+k}, z_{2+k}, \ldots , z_{t+k}\), made at times \(1
+                        + k, 2 + k, \ldots , t + k\), for any value of \(k\).
+                    </p>
 
 
 
 
 
+                </div>
+
+
+                <div id="Random walk processes" data-aos="fade-up" data-aos-duration="2000">
+
+
+
+                    <!--- Subsection !-->
+                    <div>
+                        <h4 class="givebackground">Random walk processes</h4>
+                        <p>Let Z represent a sequence of random variables in discrete-time. Z has a mean mu and variance Sigma squared. Z is nothing but the first difference of x. SO the sum of all Z is equal to Xt. $$X_t = \sum_{i=1}^t Z_i$$
+                        </p>
+                    </div>
+
+                    <!--- Subsection !-->
+                    <div id="Autocorrelation Function">
+                        <h4 class="givebackground">Autocorrelation Function</h4>
+                        <p>$$\frac{\text{Covariance}(x_t, x_{t-h})}{\text{Std.Dev.}(x_t)\text{Std.Dev.}(x_{t-h})} = \frac{\text{Covariance}(x_t, x_{t-h})}{\text{Variance}(x_t)}$$</p>
+
+                        <p>$$ {1 \over T} {log{y_{i, t+T} \over y_{i,t}}} = \alpha - \beta \ log{(y_{it})} + \epsilon_{i,t}$$</p>
+                        <p>$$ \sigma_t+T
+                            < \sigma_t $$</p>
+                    </div>
+
+                    <div class="bg-note pad givemarginx">
+                        $$ \begin{aligned} \gamma(k) &=\operatorname{Cov}\left(X_{t}, X_{t+k}\right) \\ &=\operatorname{Cov}\left(\beta_{0} Z_{t}+\cdots+\beta_{q} Z_{t-q}, \beta_{0} Z_{t+k}+\cdots+\beta_{q} Z_{t+k-q}\right) \\ &=\left\{\begin{array}{cc} 0 & k>q \\ \sigma_{Z}^{2}
+                        \sum_{i=0}^{q-k} \beta_{i} \beta_{i+k} & k=0,1, \ldots, q \\ \gamma(-k) & k
+                        <0 \end{array}\right. \end{aligned} $$ </div>
 
 
 
 
 
-        </div>
-    </section>
-</article>
+                    </div>
+
+
+
+
+
+
+                </div>
+        </section>
+
+
+    </article>
+
+
+</body>
 
 <div class="scrollBar1"><span></span></div>
-<a href="javascript:window.print()">
-    <h1>Hello</h1>
-</a>
-
-<div class="scrollBar2"><span></span></div>
 
 
 <script>
     AOS.init();
 </script>
+
+<script language="JavaScript" type="text/javascript" src="..\static\js\toc.js"></script>
+
 
 </html>

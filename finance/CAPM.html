@@ -2,27 +2,17 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 
 <script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js">
-
-
 </script>
 
 
 <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-extensions: ["tex2jax.js"],
-jax: ["input/TeX", "output/CommonHTML"],  
-"CommonHTML": {
-scale: 130
-
-
-},
-});
+    MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/CommonHTML"], "CommonHTML": { scale: 130 }, });
 </script>
 
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -34,7 +24,7 @@ scale: 130
 <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" type='text/css' media='all' href="../static/css/styling.css">
+<link rel="stylesheet" type='text/css' media='all' href="../static/css/paper.min.css">
 
 
 
@@ -43,66 +33,65 @@ scale: 130
 
 
 
-  <section>
-    <div class="wrap aligncenter">
-      <h1 class="text-landing">
-        <strong>Capital Asset Pricing Model</strong>
-      </h1>
-      <p class="text-intro"></p>
-    </div>
-  </section>
+    <section>
+        <div class="wrap aligncenter">
+            <h1 class="text-landing">
+                <strong>Capital Asset Pricing Model</strong>
+            </h1>
+            <p class="text-intro"></p>
+        </div>
+    </section>
 
 
-  <section class="bg-white">
-    <div class="wrap longform justify">
-
-
-
+    <section class="bg-white">
+        <div class="wrap longform justify">
 
 
 
-      <!--- Subsection !-->
-      <h3><strong>Price of Risk</strong></h3>
-      <p>We have seen that the capital market line is given by \(R_p = {{(R_a - R_f)} \ over \sigma_a}. \sigma_p + R_f \).
-      </p>
-      <div class="bg-sweetyellow pad givemarginx"><p> Risk free rate \(R_f\) is the price of time.</p> </div>
-      <p>Note that here \({R_a - R_f) \over  \sigma_a}\) represents the price of risk.The interpretation is that it represents the marginal returns that portfolio will pay when risk is increased.</p>
-      <p>If we are anywhere on the capital market line we are combining the risk-free asset and the portfolio in a particular combination.</p>
-      <div class="bg-lightgrey pad givemarginx">
-      <li>
-      <h5><strong>Systematic Risk: </strong></h5>
-      <p>enter definition</p>
-      </li>
-      <li>
-        <h5><strong>Non-Systematic Risk: </strong></h5>
-        <p>enter definition</p>
-        </li>
+
+
+
+            <!--- Subsection !-->
+            <h3><strong>Price of Risk</strong></h3>
+            <p>We have seen that the capital market line is given by \(R_p = {{(R_a - R_f)} \ over \sigma_a}. \sigma_p + R_f \).
+            </p>
+            <div class="bg-sweetyellow pad givemarginx">
+                <p> Risk free rate \(R_f\) is the price of time.</p>
+            </div>
+            <p>Note that here \({R_a - R_f) \over \sigma_a}\) represents the price of risk.The interpretation is that it represents the marginal returns that portfolio will pay when risk is increased.</p>
+            <p>If we are anywhere on the capital market line we are combining the risk-free asset and the portfolio in a particular combination.</p>
+            <div class="bg-lightgrey pad givemarginx">
+                <li>
+                    <h5><strong>Systematic Risk: </strong></h5>
+                    <p>enter definition</p>
+                </li>
+                <li>
+                    <h5><strong>Non-Systematic Risk: </strong></h5>
+                    <p>enter definition</p>
+                </li>
+            </div>
+
+            <p>Any portfolio above the capital market line will either have a higher return at a same/lower risk. Hence investors will short the portfolio lying on CML for that portfolio.</p>
+
+            <p>Thus arbitrage will ensure that all the investments and the portfolios lie on CML.</p>
+
+            <p>We know, $$ R_f = a $$ $$ R_a = R_f + b \since \beta is 1 $$ $$ \Rightarrow R_i = R_f + \beta_i (R_a - R_f)$$
+
+
+            </p>
+            <p></p>
+
+
+
+
+
+
+
+
+
         </div>
 
-        <p>Any portfolio above the capital market line will either have a higher return at a same/lower risk. Hence investors will short the portfolio lying on CML for that portfolio.</p>
-
-        <p>Thus arbitrage will ensure that all the investments and the portfolios lie on CML.</p>
-
-       <p>We know,
-        $$ R_f = a $$
-        $$ R_a = R_f + b \since \beta is 1 $$
-        $$ \Rightarrow R_i = R_f + \beta_i (R_a - R_f)$$
-
-
-       </p> 
-       <p></p>
-
-
-
-
-
-
-
-
-
-    </div>
-
-  </section>
+    </section>
 
 </article>
 </body>

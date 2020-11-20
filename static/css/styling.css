@@ -2,8 +2,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;500;600;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
     /*
 =========================================
 0. CSS Reset & Normalize
@@ -114,7 +113,7 @@
     }
     
     body {
-        line-height: 1;
+        line-height: 2;
     }
     
     blockquote,
@@ -1316,8 +1315,9 @@ Auto-fill & Equal height === */
     
     .text-intro,
     [class*='content-'] p {
-        font-size: 2.4rem;
+        font-size: 2rem;
         line-height: 4rem;
+        font-weight: 600;
     }
     /* -- Serif -- */
     
@@ -1549,42 +1549,6 @@ Auto-fill & Equal height === */
     .text-info {
         font-size: 1.6rem;
         line-height: 2.4rem;
-    }
-    /*=========================================
-2.1. San Francisco Font (Apple's new font)
-=========================================== */
-    
-    .text-apple,
-    .bg-apple {
-        font-family: 'San Francisco', helvetica, arial, sans-serif;
-    }
-    /* Ultra Light */
-    
-    @font-face {
-        font-family: 'San Francisco';
-        font-weight: 100;
-        src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2");
-    }
-    /* Thin */
-    
-    @font-face {
-        font-family: 'San Francisco';
-        font-weight: 200;
-        src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
-    }
-    /* Regular */
-    
-    @font-face {
-        font-family: 'San Francisco';
-        font-weight: 400;
-        src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff2");
-    }
-    /* Bold */
-    
-    @font-face {
-        font-family: 'San Francisco';
-        font-weight: bold;
-        src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
     }
     /*=========================================
 3. Header & Footer
@@ -4072,7 +4036,7 @@ Slides - Backgrounds <section class="bg-primary">
     }
     
     .bg-white {
-        background-color: #fff;
+        background-color: #e6e6e6;
     }
     
     .bg-facebook {
@@ -5032,14 +4996,102 @@ Slides Index
         opacity: 0.4;
     }
     
+    * {
+        box-sizing: border-box;
+    }
+    
     body {
-        font-weight: 500;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
     }
     
-    indent {
-        text-indent: 10%;
+    body {
+        padding: 2em 2em 2em 17em;
+        font-size: 16px;
+        line-height: 1.6;
+        font-family: 'Roboto', sans-serif;
     }
     
-    .bg-note {
-        background-color: rgb(253, 255, 244);
+    .toc {
+        position: fixed;
+        left: 3em;
+        top: 5em;
+        padding: 1em;
+        width: 14em;
+        line-height: 2;
+    }
+    
+    .toc ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .toc ul ul {
+        padding-left: 2em;
+    }
+    
+    .toc li a {
+        display: inline-block;
+        color: #aaa;
+        text-decoration: none;
+        transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .toc li.visible>a {
+        color: #111;
+        transform: translate(5px);
+    }
+    
+    .toc-marker {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    
+    .toc-marker path {
+        transition: all 0.3s ease;
+    }
+    
+    .contents {
+        padding: 1em;
+        max-width: 800px;
+        font-size: 1.2em;
+        font-family: 'Frank Ruhl Libre', sans-serif;
+    }
+    
+    .contents img {
+        max-width: 100%;
+    }
+    
+    .contents .code-block {
+        white-space: pre;
+        overflow: auto;
+        max-width: 100%;
+    }
+    
+    .contents .code-block code {
+        display: block;
+        background-color: #f9f9f9;
+        padding: 10px;
+    }
+    
+    .contents .code-inline {
+        background-color: #f9f9f9;
+        padding: 4px;
+    }
+    
+    .contents h2,
+    .contents h3 {
+        padding-top: 1em;
+    }
+    
+    @media screen and (max-width: 1200px) {
+        body {
+            font-size: 14px;
+        }
     }

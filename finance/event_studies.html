@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+
+<head>
+<script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/CommonHTML"], "CommonHTML": { scale: 100 }, });
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type='text/css' media='all' href="../static/css/paper.min.sans.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="..\static\js\jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="..\static\js\scroll.js"></script>
+
+
+
+</head>
+
+
+
+
+
+
+<title>Event Studies</title>
+
+<body>
+
+
+
+
+<article>
+<section>
+
+<div class="wrap aligncenter">
+<h3 data-aos="zoom-in-up" data-aos-duration="2000" class="context">
+Event Studies
+</h3>
+<p class="text-intro">
+</p>
+</div>
+</section>
+
+
+
+
+
+<section class="bg-white">
+
+
+<nav class="toc">
+<ul>
+
+<li><a href="#Defining Event Studies">Defining Event Studies?</a></li>
+
+<li><a href="#Why Event Studies?">Why Event Studies?</a></li>
+
+<li><a href="#How to study events?">How to study events?</a></li>
+<li><a href="#Estimation procedure">Estimation procedure</a>
+<ul>
+        <li><a href="#Define the windows">Define the windows</a></li>
+        <li><a href="#Cumulate Abnormal returns">Cumulate Abnormal returns</a></li>
+        <li><a href="#Test the hypothesis">Test the hypothesis</a></li>
+</ul>
+</li>
+<li><a href="#Rethinking, What is an event?">Rethinking, What is an event?</a></li>
+<li><a href="#Event windows and Market Efficiency">Event windows and Market Efficiency</a></li>
+</ul>
+<svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+<path stroke="#001F24" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+</svg>
+</nav>
+
+<div class="wrap longform justify">
+
+
+
+
+
+<div id = "Defining Event Studies" data-aos="fade-up" data-aos-duration="2000">
+<!--- Subsection !-->
+<h3>Defining Event Studies</h3>
+
+<p>
+    
+    Event studies are used to assess the financial impact of changes in corporate policy.​ This change could be anything. It could be, corporate control changes, corporate refocusing, CEO turnover, layoffs, plant closures, frauds, strategic investment decisions (merger acquisitions), earnings announcement.
+</p>
+They attempt to measure the effects of an economic event on the value of firms.​
+<div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="1000"><h4><strong>What is an event?</strong></h4>
+<p> Tt should be an unanticipated occurance to investors. Hence events are associated with an "abnormal" stock price effect.</p>
+
+</div>
+</div>
+
+
+
+
+
+<div id = "Why Event Studies?" data-aos="fade-up" data-aos-duration="2000">
+<!--- Subsection !-->
+<h3>Why Event Studies?</h3>
+<p>In principle, the accounting-based measures of profits can be used to measure the performance of firms.  But there was a seminal paper by Fisher and McGowan in 1983 which criticized the misuse of accounting-based measures of profits to infer the monopoly profits.</p>
+$$\text{Accounting rate to return} =  {\text{Profits} \over \text{Assets}}$$
+<p>
+    Stock prices on the other hand are not subject to manipulation by insiders and are supposed to reflect the true value of firms.​
+    There exists a substantial amount of literature on earnings management or what is called window dressing.  Window dressing implies that the people with insider information about the company that is the managers of the company, fudge the accounts to manipulate stock prices. 
+</p>
+<p>However we will assume that such problems do not exist. This serves as a base assumption of event studies that stock prices reflect the true value of firms. Consequently, an events economic impact can be measured using stock prices.​</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+<div id = "How to study events?" data-aos="fade-up" data-aos-duration="2000">
+<!--- Subsection !-->
+<h3>How to study events?</h3>
+
+<li>  
+    Identify the event
+</li>
+<li>Identify the event and estimation window timelines</li>
+<p>Usually, the event window is defined such that it is larger than the specified period of interest.It is easy to implement as all as the only data that is required is names of firms, event dates and stock prices.​</p>
+
+<div class="bg-lightgrey pad givemarginx" data-aos="fade-up" data-aos-duration="1000"><h5 class = "aligncenter"><h5>Defining Sample Space</h5><p>We mainly proceed with the listed firms because the stock prices of those firms are observable. This also kind of introduces a sampling bias in our event study. Even in listed firms, we need to set up a criterion because there might exist some firms for which, trading does not take place for many days. There might be some issues with regard to the industry representation as well because there might exist some industries where events like mergers and acquisitions are very common and vice versa.</p></div>
+<div class="bg-lightgrey pad givemarginx" data-aos="fade-up" data-aos-duration="1000"><h5 class = "aligncenter"><h5>Defining 
+    Abnormal Return</h5><p>
+        Appraisal of the impact of the event requires a measure of abnormal return. The abnormal return is the actual ex-post return of the security over the event window minus the normal return of the firm over the event window. In simple words, the difference in the returns that the event has created in returns on stocks ​is called an abnormal return. It can only be seen after the event has happened and hence ex-post. So for assessing the abnormal return there should be a definition for normal return.</p></div>
+
+        <div class="bg-lightgrey pad givemarginx" data-aos="fade-up" data-aos-duration="1000"><h5 class = "aligncenter"><h5>Defining 
+            Normal Return</h5><p>
+                The normal return is defined as the expected return without conditioning on the event taking place. We can use the market model to estimate this normal return such as standard CAPM.
+                The most common choice for an estimation window is using the period prior to the event window. For example, in an event study using daily data and the market model, the market model parameters could be estimated over the 120 days prior to the event.​</p></div>
+
+
+
+</div>
+
+<div id="Estimation procedure" data-aos="fade-up" data-aos-duration="2000">
+<!--- Subsection !-->
+<h3>Estimation Procedure</h3>
+
+<div id = "Define the windows">
+    <h4><strong>Step 1:</strong> Defination of windows</h4>
+    Define \(\tau = 0\) as the event date.
+    <p>Let \(L_1 = T_1 - T_0\) be the length of the event window. </p>
+    <p>Let \(L_2 = T_2 - T_1\) be the length of the estimation window.</p>
+    <p>Let \(L_3 = T_3 - T_2\) be the length of the post event window.</p>
+    
+    <div class="bg-lightgrey pad givemarginx" data-aos="fade-up" data-aos-duration="2000">
+    <h5 class="aligncenter"><strong>Event Window</strong></h5>
+    <p>Event window is the small time period after the event has occured.</p>
+    <h5 class="aligncenter"><strong>Estimation Window</strong></h5>
+    <p>Estimation window is the long time period before the event has occured.</p>
+    <h5 class="aligncenter"><strong>Post Event Window</strong></h5>
+    <p>Post Event window is the long time period after the event has occured.</p>
+    </div>
+    
+    <p>
+    There will also be serial correlation. The estimation window \(L1\) should be large.
+    
+    </p>
+</div>
+</div>
+
+<div id ="Cumulate Abnormal returns" data-aos="fade-up" data-aos-duration="2000">
+    <h4><strong>Step 2:</strong> Cumulate Abnormal returns over time as well as firms</h4>
+    <p>Define \(CAR(\tau_1,\tau_2)\) as \(\sum AR_{it}\). Aggregate all the abnormal returns between two
+    events.</p>
+    
+<p>
+        The distribution of the cumulative abnormal return under \(H_0\) is \( N
+        (0,\sigma^2_i(\tau_1,\tau_2)) \).
+        
+        The abnormal return observations must be aggregated across the event window and across observations
+        of the event. ​
+        
+        The individual securities abnormal returns can be aggregated for each event period \(\tau = T_1
+        \ldots T_2\). Given \(N\) events, the sample aggregated abnormal returns for period \(\tau\) is:
+       \(  AR_\tau={1 \over N} {\sum AR_{i\tau}}\) and for large \(L1\) its variance is ​
+        
+        $$Var (AR_\tau)={1 \over N^2} {\sum \sigma^2_{\epsilon i}}$$
+</p>
+
+</p>  </div>
+<div id = "Test the hypothesis" data-aos="fade-up" data-aos-duration="2000">
+    <h4><strong>Step 3:</strong> Test the hypothesis</h4>
+    <div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="1000">
+    <p>One can now test the null hypothesis that the abnormal returns are zero.​
+    </p>
+    <p> Note that null hypothesis here is that no abnormal return should be significantly different
+        from 0. If it turns out significantly different from 0, then the event has a
+        consequence.Note that if the null hypothesis is true, then the event has been anticipated.
+        So ultimately what we are driving towards is the test of differences.</p>
+        <p>If the markets are efficient the difference between cumulated returns and the average returns should not be greater than 0.<mark> Market Efficiency is the baseline assumption here.</mark></p>
+    </div>
+    <p>For the variance estimator the assumption that the event window of the N securities do not
+    overlap is used set the covariance terms to zero.​ <mark>This means that events need to be
+        distributed over time in such a way that event windows do not overlap that is events should
+        occur simultaneously.</mark> Because if they overlap the covariance terms won't be 0.</p>
+    
+    <p>
+        
+        In practice, because \(\sigma^2_{\epsilon_i}\), is unknown, an estimator must be used to calculate the variance of the abnormal returns. The usual sample variance measure from the market model regression in the estimation window is an appropriate choice.​
+    </p>
+    
+    <p>
+        One common modification to the above approach is to standardize each abnormal return using an
+        estimator of its standard deviation. Such standardization can lead to more powerful tests.​
+    
+    </p>    
+
+</p>  </div>
+<div id = "Rethinking, What is an event?" data-aos="fade-up" data-aos-duration="2000">
+<!--- Subsection !-->
+<h3>Rethinking, What is an event?</h3>
+<p>Fama says that event studies are the best tests for market efficiency i.e prices reflect the complete information. Hence the definition of event is as follows:
+    <li>To the extent that an event is uncertain and unanticipated, it will generate abnormal returns.</li>
+    <li>Once the information about the event becomes public the investors would immediately act upon the information and it would be subsumed into the stock prices.</li>
+
+    <div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="500">
+    <p> Therefore an event is anything that generated new information that makes the market deviate from effciency. So till the null hypothesis is accepted, the event study acts as a testament for the theory of market efficiency. But when the \(H_0\) is rejected we actually don't know where the problem is. There could be anomalies that is markets are not efficient or normal returns as calculated by CAPM is wrong. </p> </div>
+</div>
+
+
+
+<div id = "Event windows and Market Efficiency" data-aos="fade-up" data-aos-duration="2000">
+<!--- Subsection !-->
+<h3>Event windows and Market Efficiency</h3>
+<p>If markets are efficient, the event windows should be reasonably small, because when we assume efficiency we apriori assume that investors will act upon any new information as soon as it becomes public.</p>
+<p>If the effects of events are not realised within a short period of time it is the obligation of the researcher to explain this.</p>
+
+</div>
+
+
+
+
+
+
+
+</div>
+</section>
+
+
+</article>
+</body>
+
+<div class="scrollBar1"><span></span></div>
+
+
+<script>
+AOS.init();
+</script>
+
+<script language="JavaScript" type="text/javascript" src="..\static\js\toc.js"></script>
+
+
+</html>

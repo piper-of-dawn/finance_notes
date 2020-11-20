@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500;600;700&display=swap');
 @charset "UTF-8";
 html,
 body {
@@ -5,7 +6,7 @@ body {
   text-rendering: optimizeLegibility;
   font-weight: 300;
   /*font-weight:400 */
-  font-family: Crimson Text, times, serif;
+  font-family: 'Varta', times, sans-serif;
   font-size: 62.5%;
 }
 

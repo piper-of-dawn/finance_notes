@@ -1,0 +1,15 @@
+function init() {
+  const body = document.querySelector('body');
+  const hours = new Date().getHours();
+  const ul = document.getElementById('nav_menu')
+
+  if (9 <= hours && hours <= 12) {
+    body.style['background-image'] = 'linear-gradient(to right, rgb(39, 38, 38), rgb(96, 231, 255),rgb(39, 38, 38))';
+    changeMenuColor('linear-gradient(to right, rgb(39, 38, 38), rgb(96, 231, 255),rgb(39, 38, 38))');
+  } else if (hours > 12 && hours <= 15) {
+    body.style['background-image'] = 'linear-gradient(to right, rgb(39, 38, 38), rgb(96, 255, 207),rgb(39, 38, 38))';
+    changeMenuColor('linear-gradient(to right, rgb(39, 38, 38), rgb(96, 255, 207),rgb(39, 38, 38))');
+  } else
+    body.style['background-image'] = 'linear-gradient(to right, rgb(39, 38, 38), rgb(96, 255, 207),rgb(39, 38, 38))';
+  changeMenuColor('linear-gradient(to right, rgb(39, 38, 38), rgb(96, 255, 207),rgb(39, 38, 38))');
+}
