@@ -302,113 +302,6 @@ a:hover {
     --timing: ease
 }
 
-.scrollBar1 {
-    position: fixed;
-    top: 99vh;
-    height: 8px;
-    width: 0%;
-    background: linear-gradient(90deg, #08ffc8 0, #06d4b6 35%, #06a49a 100%);
-    transition: width .2s var(--timing);
-    text-align: right;
-    color: #fff;
-    z-index: 100;
-    opacity: .84;
-}
-
-.scrollBar1 span {
-    position: absolute;
-    top: -23px;
-    right: 15px;
-    font-size: .7em;
-    font-weight: 500;
-    display: block;
-    text-align: center;
-    opacity: .4;
-}
-
-.scrollBar1 span::after {
-    content: "%";
-    font-size: .8em;
-    position: absolute;
-    right: -15px;
-    bottom: 4px;
-    font-weight: 700;
-    opacity: .4
-}
-
-* {
-    box-sizing: border-box
-}
-
-.toc {
-    position: sticky;
-    left: 3em;
-    top: 12em;
-    padding: 1em;
-    width: 14em;
-    line-height: 2;
-    font-family: 'Varta', sans-sans-serif;
-    line-height: 1.6;
-    font-size: 16px;
-    background-color: #f7f9fb;
-    align-self: flex-start
-}
-
-.toc ul {
-    list-style: none;
-    padding: 0;
-    margin: 0
-}
-
-.toc li a {
-    display: inline-block;
-    color: #aaa;
-    text-decoration: none;
-    transition: all .3s cubic-bezier(.23, 1, .32, 1)
-}
-
-.toc-marker {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1
-}
-
-.toc-marker path {
-    transition: all .3s ease
-}
-.toc ul {
-    list-style: none;
-    padding: 0;
-    margin: 0
-}
-
-.toc ul ul {
-    padding-left: 2em
-}
-
-.toc li a {
-    display: inline-block;
-    color: #aaa;
-    text-decoration: none;
-    transition: all .3s cubic-bezier(.23, 1, .32, 1)
-}
-.toc li:hover {
-    font-weight: 500;
-}
-.toc li.visible>a {
-    color: #111;
-    transform: translate(5px);
-}
-
-
-body {
-    font-family: 'Varta', sans-serif;
-    font-weight: 400;
-    background-color: rgb(222, 229, 233);
-}
 
 html {
     scroll-behavior: smooth
@@ -822,39 +715,8 @@ h4 {
     --timing: ease
 }
 
-.scrollBar1 {
-    position: fixed;
-    top: 99vh;
-    height: 8px;
-    width: 0%;
-    background: linear-gradient(90deg, #08ffc8 0, #06d4b6 35%, #06a49a 100%);
-    transition: width .2s var(--timing);
-    text-align: right;
-    color: #fff;
-    z-index: 100;
-    opacity: .84;
-}
 
-.scrollBar1 span {
-    position: absolute;
-    top: -23px;
-    right: 15px;
-    font-size: .7em;
-    font-weight: 500;
-    display: block;
-    text-align: center;
-    opacity: .4;
-}
 
-.scrollBar1 span::after {
-    content: "%";
-    font-size: .8em;
-    position: absolute;
-    right: -15px;
-    bottom: 4px;
-    font-weight: 700;
-    opacity: .4
-}
 
 * {
     box-sizing: border-box
@@ -1281,8 +1143,8 @@ a:hover {
 }
 
 .scrollBar1 {
-    position: fixed;
-    top: 99vh;
+    position: sticky;
+    bottom: 0vh;
     height: 8px;
     width: 0%;
     background: linear-gradient(90deg, #08ffc8 0, #06d4b6 35%, #06a49a 100%);
@@ -1294,7 +1156,7 @@ a:hover {
 }
 
 .scrollBar1 span {
-    position: absolute;
+ 
     top: -23px;
     right: 15px;
     font-size: .7em;
