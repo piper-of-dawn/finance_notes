@@ -1334,4 +1334,8 @@ h6 {
     font-size: 14px;
 }
 
+li p {
+    transform: translate(2%);
+}
+
 
