@@ -67,6 +67,14 @@ Event Studies
 </li>
 <li><a href="#Rethinking, What is an event?">Rethinking, What is an event?</a></li>
 <li><a href="#Event windows and Market Efficiency">Event windows and Market Efficiency</a></li>
+<li><a href="#Measurement, Data and Robustness issues">Robustness issues</a>
+<ul>
+    <li><a href="#Confounding Effect">Confounding Effect</a></li>
+    <li><a href="#Granularity">Granularity</a></li>
+    <li><a href="#Cross-sectional Variations">Cross-sectional Variations</a></li>
+</ul>
+</li>
+<li><a href="#Empirical Findings">Empirical Findings</a></li>
 </ul>
 <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
 <path stroke="#001F24" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
@@ -114,11 +122,6 @@ $$\text{Accounting rate to return} =  {\text{Profits} \over \text{Assets}}$$
 
 
 </div>
-
-
-
-
-
 
 <div id = "How to study events?" data-aos="fade-up" data-aos-duration="2000">
 <!--- Subsection !-->
@@ -191,6 +194,7 @@ $$\text{Accounting rate to return} =  {\text{Profits} \over \text{Assets}}$$
 </p>
 
 </p>  </div>
+
 <div id = "Test the hypothesis" data-aos="fade-up" data-aos-duration="2000">
     <h4><strong>Step 3:</strong> Test the hypothesis</h4>
     <div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="1000">
@@ -219,6 +223,7 @@ $$\text{Accounting rate to return} =  {\text{Profits} \over \text{Assets}}$$
     </p>    
 
 </p>  </div>
+
 <div id = "Rethinking, What is an event?" data-aos="fade-up" data-aos-duration="2000">
 <!--- Subsection !-->
 <h3>Rethinking, What is an event?</h3>
@@ -230,8 +235,6 @@ $$\text{Accounting rate to return} =  {\text{Profits} \over \text{Assets}}$$
     <p> Therefore an event is anything that generated new information that makes the market deviate from effciency. So till the null hypothesis is accepted, the event study acts as a testament for the theory of market efficiency. But when the \(H_0\) is rejected we actually don't know where the problem is. There could be anomalies that is markets are not efficient or normal returns as calculated by CAPM is wrong. </p> </div>
 </div>
 
-
-
 <div id = "Event windows and Market Efficiency" data-aos="fade-up" data-aos-duration="2000">
 <!--- Subsection !-->
 <h3>Event windows and Market Efficiency</h3>
@@ -240,7 +243,59 @@ $$\text{Accounting rate to return} =  {\text{Profits} \over \text{Assets}}$$
 
 </div>
 
+<div id="Measurement, Data and Robustness issues" data-aos="fade-up" data-aos-duration="2000">
 
+    <h2>Measurement, Data and Robustness issues</h2>
+
+<div id = "Confounding Effect">
+    <h3>Issue of Confounding Effect</h3>
+    <p> This means that one event impacts another event. So researcher has to isolate the impact of other events over that event. Hence controlling the impact of confounding event is very necessary.</p>
+</div>
+
+<div id = "Granularity">
+<h3>Issue of Granularity</h3><p>The question of what granularity of time series data should a event study use is not trivial question. Most event studies have used closing price of stocks. Using a less granular data will reduce the power of the test whereas using highly granular data will end up modelling noise rather than signal.</p></div>
+
+
+<div id = "Cross-sectional Variations">
+<h3>Issue of Cross-sectional variations</h3>
+<p>Each event might impact different firms in different ways. Can we explain those cross-sectional differences?</p></div>
+
+
+</div>
+
+<div id="Empirical Findings" data-aos="fade-up" data-aos-duration="2000">
+<p>Event studies have been successful is explaining many theoretical results such as why returns fall when there is an equity issue.</p>
+
+<p>When firms issue debts, the abnormal returns are closer to zero. Debt will not have an influence because if firm can manage to raise debt then it signals a good financial health of the firm.</p>
+
+
+<div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="2000"><h4>Pecking order theory of Capital Structure</h4>
+<p>First things that firms do is raise internal finance and then subsequently go on to external financing.</p></div>
+
+<div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="2000"><h4>Roseff and Zaman (1988)</h4>
+<p>Roseff and Zaman have found strong evidence that strong form of market efficiency does not hold. There is an evidence of rampant insider trading and people who mimic insider traders. </p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
 

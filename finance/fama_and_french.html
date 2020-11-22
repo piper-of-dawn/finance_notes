@@ -3,17 +3,17 @@
 
 
 <head>
-    <script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], "HTML-CSS": { scale: 100 }, });
-    </script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type='text/css' media='all' href="../static/css/paper.min.sans.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="..\static\js\jquery.js"></script>
-    <script language="JavaScript" type="text/javascript" src="..\static\js\scroll.js"></script>
+<script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"], "HTML-CSS": { scale: 100 }, });
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type='text/css' media='all' href="../static/css/paper.min.sans.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="..\static\js\jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="..\static\js\scroll.js"></script>
 
 
 
@@ -29,32 +29,30 @@
 
 
 <article>
-    <section>
-        <div class="wrap aligncenter" data-aos="fade-up" data-aos-duration="1500">
-            <h3 class="context">
-                <strong>Multifactor Explanations of Asset Pricing Anomalies</strong>
-            </h3>
-            <p class="text-intro">Fama and French Paper</p>
-        </div>
-    </section>
+<section>
+<div class="wrap aligncenter" data-aos="fade-up" data-aos-duration="1500">
+<h3 class="context">
+<strong>Multifactor Explanations of Asset Pricing Anomalies</strong>
+</h3>
+<p class="text-intro">Fama and French Paper</p>
+</div>
+</section>
 
-    <section class="bg-white">
-
-
+<section class="bg-white">
 
 
-        <div id="toc" class="toc">  
 
 
-            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-            <path stroke="#001F24" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
-            stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
-            </svg>
-          
-            
-        </div>
+<div id="toc" class="toc">  
 
 
+<svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+<path stroke="#001F24" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+</svg>
+
+
+</div>
 
 
 
@@ -70,67 +68,114 @@
 
 
 
-        <div class="wrap longform justify">
-
-            <div data-aos="fade-up" data-aos-duration="2000">
-                <!--- Subsection !-->
-                <h2>
-                    Motivation</h5>
 
 
+<div class="wrap longform justify">
 
-                    <p>
-                        Vannilla CAPM model would work if there are no anomalies. But there are anomalies in the real world.size, earnings/price, cash flow/price, book-to-market equity, past, sales growth, long-term past return, and short-term past return
-                    </p>
-
-            </div>
-            <div class="bg-lightgrey pad givemarginx" data-aos="fade-up" data-aos-duration="1500">
-                <h5 class="aligncenter"><strong>Book to Market Stock:</strong></h5>
-
-                <p>Write Definition</p>
-            </div>
+<div data-aos="fade-up" data-aos-duration="2000">
+<!--- Subsection !-->
+<h2>
+Motivation</h5>
 
 
 
+<p>
+Vannilla CAPM model would work if there are no anomalies. But there are anomalies in the real world.size, earnings/price, cash flow/price, book-to-market equity, past, sales growth, long-term past return, and short-term past return
+</p>
+
+</div>
+
+
+<p>Market \(\beta\)s are insufficient to explain the returns on securities.</p>
+
+<p>Merton came about with ICAPM which is the Intertemporal CAPM.</p>
+
+<p>When ICAPM investors choose their wealth at time \(t-1\) they know their wealth at time \(t\) which might vary with the future state variables including labour income, consumption and investment opportunities available after \(t\).</p>
+
+
+<p>Investors at different stages of their lifecycle have different priorities. So we have to look at all these differences and derive an ICAPM equation.</p>
+
+<p>Fama shows that ICAPM generalises one period CAPM that if there is risk-free borrowing and lending and short sales of risky assets are allowed then market prices are multi-factor efficient.</p>
+
+
+<p>Therefore, <li>Fama and French (1992) study the joint role of size, earnings to price ratio, book to market equity ratio, debt - equity ratio along with \(\beta\)s to explain market returns.</li>
+<li>Fama and French (1993) take a more indirect approach, they argue that although size and book to market ratio are not themselves state variable that produce un-diversifiable risks (co-variances) in returns that are not captured by market return and hence not represented by \(\beta\)s. They are arguing that firm characteristics such as book to market equity are not state variables in themselves <mark>but there exist some unidentified variables out there which prevent \(beta\)s to perfectly explain the rate of returns by capturing variables such as size or B/M ratio.</mark> These state variables have to priced separately from market \(\beta\)s.</li>
+</p>
+
+<div class="bg-lightgrey pad givemarginx" data-aos="fade-up" data-aos-duration="1500">
+<h5 class="aligncenter"><strong>Book to Market Stock:</strong></h5>
+
+<p>Book value of stocks is on paper equity of the company while market value is the price at which they are being traded.</p>
+</div>
+
+<p>When size and BM ratio are used in combination they seem to absorb the roles of EP ratio and leverage hence making them irrelevent.</p>
+
+
+<h2>Why size and BM ratio are important?</h2>
+<p>Fama and French set a baseline for justification why size and BM ratio are important.</p>
+<p>Size of the firm and BM ratio are important because they are related to the fundamentals and seem to capture the common risk factors.</p>
+<p>They argue that firms with low BM ratio have lower earnings which persist and small sized firms also have lower earnings relative to large size firms.</p>
+
+<h5>The baseline of three factor model is hence established.</h5>
 
 
 
 
-            <div data-aos="fade-up" data-aos-duration="2000">
 
 
-                <!--- Subsection !-->
-                <h2>What does this paper say?</h5>
-                    <p>
-
-                        This paper argues that many of the CAPM average-return anomalies are related, and they are captured by the three-factor model in Fama and French (FF 1993). The model says that the expected return on a portfolio in excess of the risk-free rate \([E(R_i)
-                        - R_f]\) is explained by the sensitivity of its return to three factors:
-                        <ol>
-                            <li>The excess return on a broad market portfolio \((R_M - R_f)\);</li>
-                            <li>The difference between the return on a portfolio of small stocks and the return on a portfolio of large stocks (\(SMB\), small minus big); and </li>
-                            <li>The difference between the return on a portfolio of high-book-to-market stocks and the return on a portfolio of low-book-to-market stocks (\(HML\), high minus low).</li>
-                        </ol>
-                    </p>
-            </div>
-
-            <div data-aos="fade-up" data-aos-duration="2000">
-                <h3>Model Specification</h3>
-                <p>$$ E(R_i) - R_f = b_i[E(R_M) - R_f] + s_iE(SMB) + h_iE(H)$$</p>
-                <ol>
-                    <li>\([E(R_M) - R_f]\), \(E(SMB)\) and \(E(HML)\) are expected premiums.</li>
-                    <li>\(b_i\), \(s_i\) and \(h_i\) are slopes in the time-series regression.</li>
-                </ol>
-
-            </div>
+<div data-aos="fade-up" data-aos-duration="2000">
 
 
+<!--- Subsection !-->
+<h2>What does this paper say?</h5>
+<p>
 
-    </section>
+This paper argues that many of the CAPM average-return anomalies are related, and they are captured by the three-factor model in Fama and French (FF 1993). The model says that the expected return on a portfolio in excess of the risk-free rate \([E(R_i)
+- R_f]\) is explained by the sensitivity of its return to three factors:
+<ol>
+<li>The excess return on a broad market portfolio \((R_M - R_f)\);</li>
+<li>The difference between the return on a portfolio of small stocks and the return on a portfolio of large stocks (\(SMB\), small minus big); and </li>
+<li>The difference between the return on a portfolio of high-book-to-market stocks and the return on a portfolio of low-book-to-market stocks (\(HML\), high minus low).</li>
+</ol>
+</p>
+</div>
+
+<div data-aos="fade-up" data-aos-duration="2000">
+<h3>Model Specification</h3>
+<p>$$ E(R_i) - R_f = b_i[E(R_M) - R_f] + s_iE(SMB) + h_iE(H)$$</p>
+<ol>
+<li>\([E(R_M) - R_f]\), \(E(SMB)\) and \(E(HML)\) are expected premiums.</li>
+<li>\(b_i\), \(s_i\) and \(h_i\) are slopes in the time-series regression.</li>
+</ol>
+
+
+<p>This model does well while explaining the returns on individual securities.</p>
+
+<p>This model's problem is its motivation. It is a bruteforce method of explaining returns on securities rather than state variable which investors are interested in to predict returns.</p>
+
+
+
+
+<h2>Behaviourist's Perspective</h2>
+
+<p>Behaviourist flag the issue of mispricing of securities and take the model into fundamental trouble. Behavioural view says that there is a problem with rationality.</p>
+<p>Note that when CAPM does not hold, it could be either because of anomalies or because market mispricing.</p>
+
+
+<h2>Conclusion</h2>
+<p>Fundamental problems with CAPM still remains. CAPM has never been conclusively tested because tests are forced to use proxies and the assets  (human capital?) which should be included into CAPM still remain debatable.
+</p>
+
+</div>
+
+
+
+</section>
 
 
 </article>
 <script>
-    AOS.init();
+AOS.init();
 
 </script>
 
