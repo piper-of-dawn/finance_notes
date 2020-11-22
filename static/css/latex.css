@@ -634,14 +634,9 @@ table {
     #convergence_regression {
         page-break-before: always;
     }
+    hr{ page-break-after: always;}
 }
 
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Caladea';
-}
 
 .title {
     font-family: 'Old Standard TT';
