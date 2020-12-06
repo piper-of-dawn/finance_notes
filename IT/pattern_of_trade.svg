@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="607.318px" height="335.346px" viewBox="0 0 607.318 335.346" enable-background="new 0 0 607.318 335.346"
+	 xml:space="preserve">
+<g>
+	<polyline fill="#FFFFFF" points="228,0 228,311 606,311 	"/>
+	<g>
+		<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="228.5,6 228.5,310.5 599,310.5 		"/>
+		<g>
+			<path d="M228.5,0c-1.054,2.84-2.852,6.363-4.756,8.547l4.756-1.72l4.755,1.72C231.351,6.363,229.553,2.84,228.5,0z"/>
+		</g>
+		<g>
+			<polygon points="606,310.5 596.051,314.565 598.412,310.5 596.051,306.436 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<line fill="#FFFFFF" x1="228" y1="311" x2="0" y2="311"/>
+	<g>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="228" y1="310.5" x2="6" y2="310.5"/>
+		<g>
+			<path d="M0,310.5c2.84-1.054,6.363-2.852,8.547-4.756l-1.72,4.756l1.72,4.755C6.363,313.351,2.84,311.553,0,310.5z"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 552.9492 327.8457)" font-family="'MyriadPro-Regular'" font-size="14">(Xc - Xp)</text>
+<text transform="matrix(1 0 0 1 233.6147 215.2051)" font-family="'MyriadPro-Regular'" font-size="14">Ph </text>
+<text transform="matrix(0.583 0 0 0.583 251.8003 210.543)" font-family="'MyriadPro-Regular'" font-size="14">autarky</text>
+<text transform="matrix(1 0 0 1 224.7949 325.5645)" font-family="'MyriadPro-Regular'" font-size="14">0</text>
+<text transform="matrix(1 0 0 1 432.6924 275.1543)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="14">Excess Demand</tspan><tspan x="0" y="16.8" font-family="'MyriadPro-Regular'" font-size="14">for Home Country</tspan></text>
+<text transform="matrix(1 0 0 1 334.5898 325.5645)" fill="#006837" font-family="'MyriadPro-Regular'" font-size="14">Import</text>
+<text transform="matrix(1 0 0 1 102.8979 325.5645)" fill="#006837" font-family="'MyriadPro-Regular'" font-size="14">Export</text>
+<text transform="matrix(1 0 0 1 235.4614 12.6152)" font-family="'MyriadPro-Regular'" font-size="14">Price Ratio (Px/Py)</text>
+<path fill="none" stroke="#C1272D" stroke-miterlimit="10" d="M176.82,21.923c0,0,78.165,172.63,294.62,149.135"/>
+<text transform="matrix(1 0 0 1 486.2559 164.0186)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="14">Excess Demand</tspan><tspan x="0" y="16.8" font-family="'MyriadPro-Regular'" font-size="14">for foriegn country</tspan></text>
+<text transform="matrix(1 0 0 1 233.6147 90.7178)" font-family="'MyriadPro-Regular'" font-size="14">Pf </text>
+<text transform="matrix(0.583 0 0 0.583 248.1187 86.0557)" font-family="'MyriadPro-Regular'" font-size="14">autarky</text>
+<path fill="none" stroke="#006837" stroke-miterlimit="10" d="M106.41,67.103c0,0,26.924,203.206,357.052,188.462"/>
+<g>
+	<g>
+		<line fill="none" stroke="#999999" stroke-miterlimit="10" x1="220.5" y1="98" x2="220.5" y2="149"/>
+		<g>
+			<polygon fill="#999999" points="217.319,142.981 218.26,142.639 220.5,148.794 222.74,142.639 223.68,142.981 220.5,151.718 			
+				"/>
+		</g>
+	</g>
+</g>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M135.256,49.154c0,0,28.779,169.873,336.184,178.206"/>
+<g>
+	<g>
+		<line fill="none" stroke="#999999" stroke-miterlimit="10" x1="220.5" y1="203" x2="220.5" y2="170"/>
+		<g>
+			<polygon fill="#999999" points="223.681,176.41 222.74,176.752 220.5,170.596 218.26,176.752 217.32,176.41 220.5,167.673 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 232.6147 164.6729)" font-family="'MyriadPro-Regular'" font-size="14">(Px/Py)</text>
+<text transform="matrix(0.583 0 0 0.583 273.3403 160.0107)" font-family="'MyriadPro-Regular'" font-size="14">trade</text>
+</svg>

@@ -8,9 +8,8 @@
     // For each h3
     for (i = 0; i < headers.length; i++){
      
-      // Create an id
-      name = "h"+i;
-      headers[i].id=name;
+      name = headers[i].parentNode.id;
+     
      
       // a list item for the entry
       tocListItem = document.createElement("li");
@@ -18,7 +17,7 @@
       // a link for the h3
       tocEntry = document.createElement("a");
       tocEntry.setAttribute("href","#"+name);
-      tocEntry.innerText=headers[i].innerText;
+      tocEntry.innerText=headers[i].parentNode.id;
      
       tocListItem.appendChild(tocEntry);
       tocList.appendChild(tocListItem);

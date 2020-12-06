@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+
+<head>
+    <script id="MathJax-script" async src="https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js"></script>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({ extensions: ["tex2jax.js"], jax: ["input/TeX", "output/CommonHTML"], "CommonHTML": { scale: 115 }, });
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type='text/css' media='all' href="../static/css/paper.min.sans.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="..\static\js\jquery.js"></script>
+    <script language="JavaScript" type="text/javascript" src="..\static\js\scroll.js"></script>
+
+
+
+</head>
+
+
+
+
+
+
+<title>title</title>
+
+<body>
+
+
+
+
+    <article>
+        <section>
+            <div class="wrap aligncenter">
+
+
+                <div class="context">What we know about capital structure?</div>
+
+
+                <p class="text-intro">
+                    Rajan and Zingales</p>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="bg-white">
+
+
+            <div class="toc">
+                <ul>
+                    <li><a href="#What we know about Capital Structure">Capital Structure</a></li>
+                    <li><a href="#Objective">Objective</a></li>
+                    <li><a href="#Measurement of Leverage">Measurement of Leverage</a>
+                  <ul>
+                            <li><a href="#Agency cost approach">Agency cost approach</a></li>
+                            <li><a href="#Bankruptcy cost approach">Bankruptcy cost approach</a></li>
+                            <li><a href="#Problem with Total Liabilities / Total Assets">Problem with TL / TA</a></li>
+                            <li><a href="#Problems that still remain">Problems that still remain</a></li>
+
+                   </ul>
+                    </li>
+                    <li><a href="#Findings of the paper">Findings of the paper</a>
+
+                  <ul>
+                            <li><a href="#Tax Story">Tax Story</a></li>
+                            <li><a href="#Bankruptcy Story">Bankruptcy Story</a></li>
+                  </ul>
+                    </li>
+
+                    <li><a href="#What doesn't matter?">What doesn't matter?</a>
+                <ul>
+                            <li><a href="#Bank Orientation and Market Orientation">Bank and Market Orientation</a></li>
+                            <li><a href="#Threat of takeover">Threat of takeover</a></li>
+                </ul>
+
+                    </li>
+                    <li><a href="#What matters">What matters</a>
+
+                  <ul>
+                        <li><a href="#Variables">Variables</a></li>
+                        <li><a href="#Model Specification">Model Specification</a></li>
+                  </ul>
+
+
+                    </li>
+                    <li><a href="#Criticism">Criticism</a></li>
+                </ul>
+                <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/1000/svg">
+                    <path stroke="#000" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000"
+                        stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+                </svg>
+            </div>
+
+            <div class="wrap longform justify">
+                <div id="What we know about Capital Structure" data-aos="fade-up" data-aos-duration="1000">
+
+                    <h2>What we know about Capital Structure</h2>
+
+                    <h3>Introduction</h3>
+                    <p>Rajan and Zingales remark that a very little is known about the empirical relevance of theories.
+                        This is to say that there exist no empirical template grounded in first principles that could
+                        explain the theory. For example: In a MM world, leverage is not systematically related to any
+                        firm characteristic. <quote>Leverage is an outcome of accident, history or co-incidence in the
+                            Modigliani Miller world.</quote>
+                    </p>
+
+                </div>
+
+
+                <div id="Objective" data-aos="fade-up" data-aos-duration="1000">
+
+                    <h3>Objective of Rajan and Zingales Paper</h3>
+
+                    <p>Uses data on G7 countries on non-financial firms and non-service sector firms. </p>
+
+
+                    <div class="bg-lightgrey pad givemarginx" data-aos="fade-up" data-aos-duration="1000">
+                        <h4 class="aligncenter"><strong>What are non financial firms?</strong></h4>
+
+                        <p>Any firm that is not into serious business of lending or borrowing, that is they are not
+                            financial intermediaries. It is very difficult to seperate financial from non-financial
+                            firms.</p>
+
+                    </div>
+
+
+                    <div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="1000">
+                        <h4>Why we are not including financial firms?</h4>
+                        <p> Financial firms are by-definition always levered.Think of a bank that accepts deposits and
+                            gives out loans. Deposits are a kind of borrowing of a Bank from its customers. Hence a
+                            financial firm is always levered. </p>
+                    </div>
+
+
+
+                    <div class="bg-note pad givemarginx" data-aos="fade-up" data-aos-duration="1000">
+                        <h4>Why we are not including service sector firms?</h4>
+                        <p>Service sector firms usually do not require of very large fixed investment to begin unlike
+                            manufacturing firms which are dependent upon borrowing to fund the production. Service
+                            sector firms are more of human capital centric and since we do not have a theory that
+                            explains human capital hence we have decided to exclude the service sector firms.</p>
+                    </div>
+
+
+                    <p data-aos="fade-up" data-aos-duration="500">The major takeaway here is that we do not have a
+                        theory of everything. No unified theory can
+                        explain the capital structure of firms and hence we have separate our sample into service /
+                        manufacturing firms, financial / non-financial firms etc.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div id="Measurement of Leverage" data-aos="fade-up" data-aos-duration="1000">
+
+                    <h2>Measurement of Leverage</h2>
+                    <p> One of the most remarkable explanations given by Rajan and Zingales is that they have very
+                        eloquently argued that which accounting measure of leverage one should use in the study is not a
+                        trivial question.</p>
+
+                    <p>Leverage is nothing but stock of debt divided by the market value of firms. The broadest measure
+                        of leverage is total liabilities divided total assets.</p>
+
+                    <div id="Agency cost approach">
+                        <h3>Agency cost approach</h3>
+                        <p>This is manager-owner approach to view a from that is managers are different from owners.
+                            Hence it is suggested that the stock of debt should be divided by value of the firm to
+                            calculate leverage. This gives what is left over after for shareholders.</p>
+                    </div>
+
+                    <div id="Bankruptcy cost approach">
+                        <h3>Bankruptcy cost approach</h3>
+                        <p> If the firm goes bankrupt then the ownership of the firm is transferred to the bondholders.
+                            This approach is that whether the firm then can meet its fixed payments along with
+                            bankruptcy cost. Hence the measure of interest coverage ratio becomes relevant</p>
+                    </div>
+
+
+                    <p> The takeaway here is the measurement metric is dependent on what you are trying to emphasize in
+                        the study. That is, if you want to emphasize bankruptcy costs then you should go with interest
+                        coverage ratio.</p>
+
+                    <div id="Problem with Total Liabilities / Total Assets">
+                        <h3>Problem with Total Liabilities / Total Assets</h3>
+                        <p>If we define leverage as total liabilities / total assets then we run into following
+                            practical problems:
+                            <li>There is no indication of whether the firm will default in future.</li>
+                            <li>Total liabilities might include very short term liabilities (transaction purpose) such
+                                as accounts payable which might over state leverage. The accounts payable are mere
+                                postponement of payments not a medium to finance investment hence it should not be
+                                include for the calculation of leverage.<strong>Here, we are arguing that the duration
+                                    of the debt is important.</strong></li>
+                        </p>
+                    </div>
+
+                    <p>Hence a more careful measure of leverage is required. Studies usually use:
+                        $$ \text{Leverage} = {\text{Debt(Both short term and long term)} \over \text{Total Assets}} $$
+                    <p>This measure reflects the agency cost approach.</p>
+                    $$ \text{Coverage Ratio} = {\text{EBIT} \over \text{Interest Expenses}} $$
+                    <p>EBIT is the earning before interest and taxes. Coverage ratio measures the risk that equity
+                        holders will not be able to pay the fixed payments of the firm and hence would have to give up
+                        control. This measure reflects the bankruptcy cost approach.</p>
+                    
+                    <div id= "Problems that still remain">
+                        <h3>Problems that still remain</h3>
+                        <p>However, in both the measures of leverage the problem of short term debts that just mean
+                            postponement of payments still remains.</p>
+                        <p>Ability of a firm to make fixed payments, at very low levels of debt is different from the
+                            firm which is at a very high level of debt.
+                        </p>
+                        <p>This measure is very sensitive to income fluctuations because both numerator and denominators
+                            have very sensitive to variables.
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+                <div id="Findings of the paper" data-aos="fade-up" data-aos-duration="1000">
+
+                    <h2>Findings of the paper</h2>
+
+                    <div id="Tax Story">
+                        <h3>Tax story</h3>
+
+                        <p> Before getting into anything we have to state some remarkable findings from Rajan and
+                            Zingales paper that US and Japan are very diverse countries in terms of their bank
+                            orientation but they have very similar leverages. Similarly United States and United Kingdom
+                            are very similar countries in terms of bank orientation they have very different leverages
+                        </p>
+
+                        <p>Hence we should depart from bank oriented explanations and focus on an institutions oriented
+                            study,</p>
+
+                        <p>The focus should be shifted onto tax codes, bankruptcy laws and bond market infrastructure to
+                            explain the capital structures.</p>
+
+                        <p>Tax stories are complicated. how operating profits are channeled to investors matters a lot
+                            in debt and equity decisions. It is quite possible that tax rates influence the aggregate
+                            leverage in the country. Rajan and Zingales find that this holds true for the high tax rates
+                            but not for the lower level of taxes.</p>
+                    </div>
+
+                    <div id="Bankruptcy Story">
+                        <h3>Bankruptcy story</h3>
+
+                        <p>The contrast between United States and Germany is noteworthy here, laws in United States are
+                            very firm (debtor) friendly whereas in Germany they are very creditor friendly. So one can
+                            expect that a firm in United States that usually should not go bankrupt might go bankrupt.
+                        </p>
+
+                        <p>
+                            In United States, the priority is given to the continuity of firms where as in United
+                            Kingdom, the priority is given to the interests of the creditors.
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+                <div id="What doesn't matter?" data-aos="fade-up" data-aos-duration="2000">
+                    <h2>What doesn't matter?</h2>
+
+                    <div id="Bank Orientation and Market Orientation">
+                        <h3>Bank Orientation and Market Orientation</h3>
+
+                        <p> Germany is a very bank oriented economy that is the banks are allowed to lend as well as
+                            hold equities in the firms whereas in United States there is a restriction on both the
+                            activities.</p>
+
+
+                        <p>
+
+                            Rajan and Zingales conclude that the distinction between market oriented economies and Bank
+                            oriented economies is very clear in the type of financing that is used. Bank oriented
+                            economies go for more of a private financing (which cannot be traded) such as bank loans.
+                            such as which cannot be traded in the stock market, whereas Market oriented economies go for
+                            more of a public financing (bond markets) which can be publically traded.
+
+                        </p>
+
+                        <p>
+
+                            However note that this is not useful in explaining leverage. Debt is debt no matter if it is
+                            publicly traded or not publicly traded.
+                        </p>
+
+
+
+
+
+
+                        <div id="Threat of takeover">
+
+                            <h3>Threat of takeover</h3>
+                            <p> In United States United Kingdom and Canada the threat of takeover is very credible
+                                because of the diffused ownership structure. In Japan and Continental Europe the
+                                ownership structure is highly concentrated. Rajan and Zingales find that ownership or
+                                manager-owner dynamics do not impact leverage because both the opposite forces are at
+                                play here:</p>
+                            <ol>
+
+                                <li> When shareholders are in board of directors that is active part of management, then
+                                    they will facilitate equity issues.</li>
+                                <li>
+
+                                    On the other hand if shareholders are banks, then they will be against private
+                                    financing and will force their clients to borrow.
+                                </li>
+                            </ol>
+
+                            </p>
+                        </div>
+                    </div>
+                    
+               
+
+                </div>
+
+                <div id="What matters" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>What matters</h2>
+
+                    <div id="Variables">
+                        <h3>Variables</h3>
+                        <p>Rajan and Zingales distil down to these four factors to explain leverage: </p>
+                        <ol>
+                            <li>Firm Size: Leverage is expected to be positively correlated with firm size as large
+                                firms
+                                have an advantage of collateral and information symmetry over small firms wrt obtaining
+                                debt.</li>
+                            <li>Tangibility of assets i.e. Fixed assets / Total : More fixed assets you have more
+                                collateral
+                                you have for obtaining debt and thus reduces agency cost of debt (Burger and Udell
+                                (1994))
+                            </li>
+                            <li>Market to book ratio</li>
+                            <li>Profitability</li>
+                        </ol>
+                    </div>
+                    <div id="Model Specification">
+                        <h3>Model Specification</h3>
+                        $$ L_i = \beta_0 + \beta_1 S_i + \beta_2 T_i + \beta_3 MB_i + \beta_4 P_i + \epsilon_i$$
+                        Here,
+
+                        <li>Firm Size: \(S\)</li>
+                        <li>Tangibility of assets: \(T\)</li>
+                        <li>Market to book ratio: \(MB\)</li>
+                        <li>Profitability: \(P\)</li>
+                        <li>\(\epsilon_i\) denotes the \(i_{th}\) firm level shocks.</li>
+
+                        <p>Measure of leverage used is Debt to Capitalisation ratio.</p>
+                        <p>The coefficients are estimated using the censored Tobit model.</p>
+
+                        <h3>Regression results:</h3>
+                        <li>Size is positively correlated with leverage.</li>
+                        <li> Tangibility is positively correlated with leverage.</li>
+                        <li>Profitability is negatively correlated with leverage. </li>
+                        <li>Market to book ratio is negatively correlated with leverage. </li>
+                    </div>
+                </div>
+
+                <div id="Criticism" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Criticism</h2>
+                    <p>This empirical work lacks any theoretical underpinning.</p>
+                </div>
+
+</div>
+
+
+
+
+
+
+        </section>
+    </article>
+</body>
+
+<div class="scrollBar1"><span></span></div>
+
+
+<script>
+    AOS.init();
+</script>
+
+<script language="JavaScript" type="text/javascript" src="..\static\js\toc.js"></script>
+
+
+</html>

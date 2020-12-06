@@ -1152,13 +1152,14 @@ h6 {
     left: 3em;
     top: 4em;
     padding: 1em;
-    width: 15em;
+    width: 21em;
     line-height: 2;
     font-family: 'Varta', sans-serif;
     line-height: 1.6;
     font-size: 16px;
     background-color: #f7f9fb;
-    align-self: flex-start
+    align-self: flex-start;
+    color: rgb(28, 88, 138);
 }
 
 .toc ul {
